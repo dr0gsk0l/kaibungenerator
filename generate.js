@@ -12,6 +12,7 @@ document.getElementById("to").onclick=function(){
   console.log("と");
   ansstr+='と';
   document.getElementById("ansstring").innerText=ansstr;
+  console.log("変更済み");
   console.log(ansstr);
 }
 
