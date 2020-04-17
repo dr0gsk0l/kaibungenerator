@@ -111,6 +111,10 @@ document.getElementById("make").onclick=function(){
   anchor.innerText = 'Tweet #クソ回文ジェネレーター';
   tweetDivided.appendChild(anchor);
   
+  const script = document.createElement('script');
+  script.setAttribute('src', 'https://platform.twitter.com/widgets.js');
+  tweetDivided.appendChild(script);
+  
   ansimg+="あ";
   meisi=false;
 }
