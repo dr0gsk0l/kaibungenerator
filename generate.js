@@ -11,12 +11,14 @@ var MA='<img src="https://3.bp.blogspot.com/-m31LpaTSzy4/U32NRZQpjbI/AAAAAAAAgr0
 document.getElementById("to").onclick=function(){
   console.log("と");
   ansstr+='と';
+  document.getElementById("ansstring").innerText=ansstr;
   console.log(ansstr);
 }
 
 document.getElementById("ma").onclick=function(){
   console.log("ま");
   ansstr+='ま';
+  document.getElementById("ansstring").innerText=ansstr;
   console.log(ansstr);
 }
 
@@ -80,5 +82,6 @@ document.getElementById("make").onclick=function(){
     console.log('error');
     break;
   }
-  ansstr=tmp;
+  document.getElementById("ansstring").innerText=tmp;
+  document.getElementById("ansimg").innerHTML=ansimg;
 }
