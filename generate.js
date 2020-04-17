@@ -58,7 +58,7 @@ document.getElementById("make").onclick=function(){
     if(ansstr.substr(i,3)=='とまと'){
       if(meisi)tmp+='，';
       tmp+='トマト';
-      if(i%17==6)ansimg+=TOMATO2+' ';
+      if(i%80==77)ansimg+=TOMATO2+' ';
       else ansimg+=TOMATO+' ';
       i+=3;
       meisi=true;
@@ -67,8 +67,8 @@ document.getElementById("make").onclick=function(){
     if(ansstr.substr(i,2)=='まま'){
       if(meisi)tmp+='，';
       tmp+='ママ';
-      if(i%33==0)ansimg+=MAMA2+' ';
-      else if(i%33==7)ansimg+=MAMA3+' ';
+      if(i%100==87)ansimg+=MAMA2+' ';
+      else if(i%59==50)ansimg+=MAMA3+' ';
       else ansimg+=MAMA+' ';
       i+=2;
       meisi=true;
