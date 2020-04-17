@@ -12,5 +12,21 @@ body{
 }
 
 #ansstring{
-  font-size: large;
+  font-size: xx-large;
+}
+
+#to{
+  width:50;
+  height:20;
+  font-size:large;
+}
+#ma{
+  width:50;
+  height:20;
+  font-size:large;
+}
+#reset{
+  width:40;
+  height:16;
+  font-size:large;
 }
