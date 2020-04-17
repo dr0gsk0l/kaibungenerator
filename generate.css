@@ -6,27 +6,27 @@ body{
   background-color: blue;
   width: 200px;
   height: 100px;
-  font-size: large;
+  font-size: xx-large;
   font-style: oblique;
   color: aliceblue;
 }
 
 #ansstring{
-  font-size: xx-large;
+  font-size: large;
 }
 
 #to{
-  width:50;
-  height:20;
+  width:50px;
+  height:20px;
   font-size:large;
 }
 #ma{
-  width:50;
-  height:20;
+  width:50px;
+  height:20px;
   font-size:large;
 }
 #reset{
-  width:40;
-  height:16;
+  width:40px;
+  height:16px;
   font-size:large;
 }
