@@ -12,6 +12,7 @@ document.getElementById("to").onclick=function(){
   if(ansimg.length){
     ansimg="";
     ansstr="";
+    document.getElementById("ansimg").innerHTML=ansimg;
   }
   console.log("と");
   ansstr+='と';
@@ -23,6 +24,7 @@ document.getElementById("ma").onclick=function(){
   if(ansimg.length){
     ansimg="";
     ansstr="";
+    document.getElementById("ansimg").innerHTML=ansimg;
   }
   console.log("ま");
   ansstr+='ま';
