@@ -1,6 +1,7 @@
 var ansstr="";
 var ansimg="";
 var meisi=false;
+const tweetDivided = document.getElementById('tweet');
 document.getElementById("ansstring").innerText="ボタンを押してね";
 
 var TOMATO='<img src="https://4.bp.blogspot.com/-FlkEDz3wQSc/Vtw1wrbo6AI/AAAAAAAA4fk/k8tfPNkMvb4/s800/tomato_red.png" alt="トマト" width="100px" height="100px"';
