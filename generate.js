@@ -96,5 +96,19 @@ document.getElementById("make").onclick=function(){
   }
   document.getElementById("ansstring").innerText=tmp;
   document.getElementById("ansimg").innerHTML=ansimg;
+  
+  while (tweetDivided.firstChild){
+    tweetDivided.removeChild(tweetDivided.firstChild);
+  }
+  const anchor = document.createElement('a');
+  const hrefValue = 'https://twitter.com/intent/tweet?button_hashtag='
+    + encodeURIComponent('クソ回文ジェネレーター')
+    + '&ref_src=twsrc%5Etfw';
+  anchor.setAttribute('href', hrefValue);
+  anchor.className = 'twitter-hashtag-button';
+  anchor.setAttribute('data-text', tmp);
+  anchor.innerText = 'Tweet #クソ回文ジェネレーター';
+  tweetDivided.appendChild(anchor);
+  
   meisi=false;
 }
