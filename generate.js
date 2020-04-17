@@ -25,6 +25,8 @@ document.getElementById("ma").onclick=function(){
 document.getElementById("reset").onclick=function(){
   ansstr="";
   ansimg="";
+  document.getElementById("ansstring").innerText=ansstr;
+  document.getElementById("ansimg").innerHTML=ansimg;
 }
 
 document.getElementById("make").onclick=function(){
