@@ -94,4 +94,5 @@ document.getElementById("make").onclick=function(){
   }
   document.getElementById("ansstring").innerText=tmp;
   document.getElementById("ansimg").innerHTML=ansimg;
+  meisi=false;
 }
