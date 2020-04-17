@@ -32,7 +32,7 @@ document.getElementById("make").onclick=function(){
   if(ansimg.length)return;
   for(var i=ansstr.length-1;i>=0;i--)ansstr+=ansstr[i];
   ansstr+='###########';
-  var tmp;
+  var tmp="";
   for(var i=0;;){
     if(ansstr[i]=='#')break;
     if(meisi&&ansstr[i]=='と'&&ansstr[i+1]!='#'){
