@@ -1,1 +1,1 @@
-# kaibungenerator
+君だけの回文を作ろう！
