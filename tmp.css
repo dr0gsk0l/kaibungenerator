@@ -1,0 +1,64 @@
+body{
+  background-color: beige;
+}
+
+#make{
+  -webkit-appearance:none;
+  background-color: blue;
+  width: 150px;
+  height: 80px;
+  font-size: x-large;
+  font-style: oblique;
+  color: aliceblue;
+}
+
+#ansstring{
+  font-size: large;
+}
+
+#と{
+  -webkit-appearance:none;
+  width: 300px;
+  height: 100px;
+  font-size:xx-large;
+  color: red;
+}
+
+#ま{
+  -webkit-appearance:none;
+  width: 300px;
+  height: 100px;
+  font-size:xx-large;
+  color: green;
+}
+
+#ひ{
+  -webkit-appearance:none;
+  width: 300px;
+  height: 100px;
+  font-size:xx-large;
+  color: blue;
+}
+
+#め{
+  -webkit-appearance:none;
+  width: 300px;
+  height: 100px;
+  font-size:xx-large;
+  color: pink;
+}
+
+#新聞紙{
+  -webkit-appearance:none;
+  width: 300px;
+  height: 100px;
+  font-size:xx-large;
+  color: white;
+}
+
+#reset{
+  -webkit-appearance:none;
+  width: 100px;
+  height: 50px;
+  font-size:large;
+}
