@@ -1,11 +1,12 @@
 var ansstr="",ansimg="",meisi=false,idx,tmp="";
 const tweetDivided = document.getElementById('tweet');
 const mojiDivided = document.getElementById('moji');
+
 document.getElementById("ansstring").innerText="ボタンを押してね";
 makebutton("to","と");
 makebutton("ma","ま");
-document.getElementById("to").onclick=pushed('と');
-document.getElementById("ma").onclick=pushed('ま');
+document.getElementById("to").onclick=function(){pushed('と')};
+document.getElementById("ma").onclick=function(){pushed('ま')};
 
 var TOMATO='<img src="https://4.bp.blogspot.com/-FlkEDz3wQSc/Vtw1wrbo6AI/AAAAAAAA4fk/k8tfPNkMvb4/s800/tomato_red.png" alt="トマト" width="100px" height="100px">';
 var TOMATO2='<img src="https://2.bp.blogspot.com/-i3xPt3TISb0/UWgWlyylbUI/AAAAAAAAQGo/JUtkdKSkloc/s1600/vegetable_tomato.png" alt="トマト2" width="120px" height="100px">';
@@ -47,15 +48,15 @@ function pushed(moji){
   console.log(ansstr);
   if(ansstr.length>60&&mojiDivided.childElementCount==2){
     makebutton("hi","ひ");
-    document.getElementById("hi").onclick=pushed('ひ');
+    document.getElementById("hi").onclick=function(){pushed('ひ')};
   }
   if(ansstr.length>120&&mojiDivided.childElementCount==3){
     makebutton("me","め");
-    document.getElementById("me").onclick=pushed('め');
+    document.getElementById("me").onclick=function(){pushed('め')};
   }
   if(ansstr.length>300&&mojiDivided.childElementCount==4){
     makebutton("shinbunshi","しんぶんし");
-    document.getElementById("shinbunshi").onclick=pushed('しんぶんし');
+    document.getElementById("shinbunshi").onclick=function(){pushed('しんぶんし')};
   }
 }
 
