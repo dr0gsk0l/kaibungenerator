@@ -113,7 +113,7 @@ document.getElementById("make").onclick=function(){
     + '&ref_src=twsrc%5Etfw';
   anchor.setAttribute('href', hrefValue);
   anchor.className = 'twitter-hashtag-button';
-  anchor.setAttribute('data-text', tmp);
+  anchor.setAttribute('data-text', tmp+' https://dr0gsk0l.github.io/kaibungenerator/generate.html');
   anchor.innerText = 'Tweet #クソ回文ジェネレーター';
   tweetDivided.appendChild(anchor);
   
