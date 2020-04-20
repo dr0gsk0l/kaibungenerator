@@ -92,6 +92,7 @@ document.getElementById("make").onclick=function(){
     if(idx%30==15){if(change(3,'とまと','トマト',TOMATO2))continue;}
     else if(change(3,'とまと','トマト',TOMATO))continue;
     if(change(5,'ままとひと','ママと人',MAMATOHITO))continue;
+    if(change(5,'ひととまま','人とママ',MAMATOHITO))continue;
     if(idx%40==10){if(change(2,'まま','ママ',MAMA2))continue;}
     else if(idx%40==21){if(change(2,'まま','ママ',MAMA3))continue;}
     else if(change(2,'まま','ママ',MAMA))continue;
