@@ -32,6 +32,7 @@ var MAHI='<img src="https://4.bp.blogspot.com/-354gcMIxGnE/WYAxp9UjnxI/AAAAAAABF
 var HI='<img src="https://3.bp.blogspot.com/-bTpI2R-Kxe0/Viio_KII7WI/AAAAAAAAztM/oNokVj_uJyI/s400/honoo_hi_fire.png" alt="火" width="100px" height="100px">';
 var ME='<img src="https://2.bp.blogspot.com/-UNeJcdfWzIw/Wn1ZZObzwbI/AAAAAAABKL0/pyLhnj-bz8clSvYGOKpCNvZ_4kXxoXJcgCLcBGAs/s800/body_eye_color9_black.png" alt="目" width="100px" height="100px">';
 var SHINBUNSHI='<img src="https://3.bp.blogspot.com/--hFzOAXOk-Y/Wn1aH38lQvI/AAAAAAABKSQ/bFMS6Hoae8kQpwi2y4SzdEBScWCC7j6RACLcBGAs/s400/news_shinbunshi.png" alt="新聞紙" width="100px" height="100px">';
+var MAMATOHITO='<img src="https://2.bp.blogspot.com/-c27iEQIizZo/V2ucndSaVhI/AAAAAAAA70w/PFSPB_npLCoULgUUn4ltSWAsLoASMN54gCLcB/s800/uwaki_genba_woman.png" alt="ママと人" width="100px" height="100px">';
 
 function makebutton(ID,VALUE){
   var anchor=document.createElement('input');
@@ -90,6 +91,7 @@ document.getElementById("make").onclick=function(){
     if(meisi)tmp+='、';
     if(idx%30==15){if(change(3,'とまと','トマト',TOMATO2))continue;}
     else if(change(3,'とまと','トマト',TOMATO))continue;
+    if(change(5,'ままとひと','ママと人',MAMATOHITO))continue;
     if(idx%40==10){if(change(2,'まま','ママ',MAMA2))continue;}
     else if(idx%40==21){if(change(2,'まま','ママ',MAMA3))continue;}
     else if(change(2,'まま','ママ',MAMA))continue;
