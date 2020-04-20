@@ -28,6 +28,7 @@ var HITO3='<img src="https://4.bp.blogspot.com/-3ucwJP0Yc3Y/W6DT4kRm1BI/AAAAAAAB
 var HITO4='<img src="https://1.bp.blogspot.com/-dgtkP4wAOnk/W6DT38rTvOI/AAAAAAABPAA/fvIweeOxx9AfkNTFQ3OOKXzcPXqlzH7VACLcBGAs/s800/talk7_blue_man.png" alt="人" width="77px" height="100px">';
 var HITO5='<img src="https://1.bp.blogspot.com/-HqzQ05aA7xE/XWS5iiw_2uI/AAAAAAABUTs/VJuekgkFXDU2PLpdQYnXNrce42U9nY0rwCLcBGAs/s1600/kakedasu_people2.png" alt="人" width="55px" height="100px">';
 var HIMA='<img src="https://3.bp.blogspot.com/-fImkQ-EyglU/VJF_oRM5p4I/AAAAAAAAp5I/N4jypFga8ew/s400/hima_taikutsu.png" alt="暇" width="100px" height="100px">';
+var MAHI='<img src="https://4.bp.blogspot.com/-354gcMIxGnE/WYAxp9UjnxI/AAAAAAABFuc/uzU1pPFBlwkcq47izNs9UnP9_7SvRIYeQCLcBGAs/s800/body_mahi_man.png" alt="麻痺" width="60px" height="100px">';
 var HI='<img src="https://3.bp.blogspot.com/-bTpI2R-Kxe0/Viio_KII7WI/AAAAAAAAztM/oNokVj_uJyI/s400/honoo_hi_fire.png" alt="火" width="100px" height="100px">';
 var ME='<img src="https://2.bp.blogspot.com/-UNeJcdfWzIw/Wn1ZZObzwbI/AAAAAAABKL0/pyLhnj-bz8clSvYGOKpCNvZ_4kXxoXJcgCLcBGAs/s800/body_eye_color9_black.png" alt="目" width="100px" height="100px">';
 var SHINBUNSHI='<img src="https://3.bp.blogspot.com/--hFzOAXOk-Y/Wn1aH38lQvI/AAAAAAABKSQ/bFMS6Hoae8kQpwi2y4SzdEBScWCC7j6RACLcBGAs/s400/news_shinbunshi.png" alt="新聞紙" width="100px" height="100px">';
@@ -103,6 +104,7 @@ document.getElementById("make").onclick=function(){
     if(idx%5==2)if(change(2,'ひと','人',HITO3))continue;
     if(idx%5==3)if(change(2,'ひと','人',HITO4))continue;
     if(idx%5==4)if(change(2,'ひと','人',HITO5))continue;
+    if(change(2,'まひ','麻痺',MAHI))continue;
     if(change(2,'ひま','暇',HIMA))continue;
     if(change(2,'まと','的',MATO))continue;
     if(change(1,'と','戸',TO))continue;
