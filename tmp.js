@@ -33,6 +33,8 @@ var HI='<img src="https://3.bp.blogspot.com/-bTpI2R-Kxe0/Viio_KII7WI/AAAAAAAAztM
 var ME='<img src="https://2.bp.blogspot.com/-UNeJcdfWzIw/Wn1ZZObzwbI/AAAAAAABKL0/pyLhnj-bz8clSvYGOKpCNvZ_4kXxoXJcgCLcBGAs/s800/body_eye_color9_black.png" alt="目" width="100px" height="100px">';
 var SHINBUNSHI='<img src="https://3.bp.blogspot.com/--hFzOAXOk-Y/Wn1aH38lQvI/AAAAAAABKSQ/bFMS6Hoae8kQpwi2y4SzdEBScWCC7j6RACLcBGAs/s400/news_shinbunshi.png" alt="新聞紙" width="100px" height="100px">';
 var MAMATOHITO='<img src="https://2.bp.blogspot.com/-c27iEQIizZo/V2ucndSaVhI/AAAAAAAA70w/PFSPB_npLCoULgUUn4ltSWAsLoASMN54gCLcB/s800/uwaki_genba_woman.png" alt="ママと人" width="100px" height="100px">';
+var MASHINE='<img src="https://1.bp.blogspot.com/-A4669A-c7Iw/Vq89EUvfqdI/AAAAAAAA3lY/N7Uzmc-426k/s400/machine_yubisashi_kosyou.png" alt="マシン" width="100px" height="100px">';
+var BUNSHI='<img src="https://3.bp.blogspot.com/-Ac8SaHcmlMA/WIW-Ok_GUjI/AAAAAAABBS0/BoAOJqIHeco19fiET1tN2tF3NJ_tv_Z7wCLcB/s400/kagaku_bunshi.png" alt="分子" width="100px" height="100px">';
 
 function makebutton(ID,VALUE){
   var anchor=document.createElement('input');
@@ -89,6 +91,7 @@ document.getElementById("make").onclick=function(){
       idx++;continue;
     }
     if(meisi)tmp+='、';
+    if(change(6,'ましんぶんし','マシン、分子',MASHINE+' '+BUNSHI))continue;
     if(idx%30==15){if(change(3,'とまと','トマト',TOMATO2))continue;}
     else if(change(3,'とまと','トマト',TOMATO))continue;
     if(change(5,'ままとひと','ママと人',MAMATOHITO))continue;
