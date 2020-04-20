@@ -46,15 +46,15 @@ function pushed(moji){
   ansstr+=moji;
   document.getElementById("ansstring").innerText=ansstr;
   console.log(ansstr);
-  if(ansstr.length>60&&mojiDivided.childElementCount==2){
+  if(ansstr.length>10&&mojiDivided.childElementCount==2){
     makebutton("hi","ひ");
     document.getElementById("hi").onclick=function(){pushed('ひ')};
   }
-  if(ansstr.length>120&&mojiDivided.childElementCount==3){
+  if(ansstr.length>20&&mojiDivided.childElementCount==3){
     makebutton("me","め");
     document.getElementById("me").onclick=function(){pushed('め')};
   }
-  if(ansstr.length>300&&mojiDivided.childElementCount==4){
+  if(ansstr.length>50&&mojiDivided.childElementCount==4){
     makebutton("shinbunshi","しんぶんし");
     document.getElementById("shinbunshi").onclick=function(){pushed('しんぶんし')};
   }
