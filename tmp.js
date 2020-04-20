@@ -2,10 +2,10 @@ var ansstr="",ansimg="",meisi=false,idx,tmp="";
 const tweetDivided = document.getElementById('tweet');
 const mojiDivided = document.getElementById('moji');
 document.getElementById("ansstring").innerText="ボタンを押してね";
-makebutton("と");
-makebutton("ま");
-document.getElementById("と").onclick=pushed('と');
-document.getElementById("ま").onclick=pushed('ま');
+makebutton("to","と");
+makebutton("ma","ま");
+document.getElementById("to").onclick=pushed('と');
+document.getElementById("ma").onclick=pushed('ま');
 
 var TOMATO='<img src="https://4.bp.blogspot.com/-FlkEDz3wQSc/Vtw1wrbo6AI/AAAAAAAA4fk/k8tfPNkMvb4/s800/tomato_red.png" alt="トマト" width="100px" height="100px">';
 var TOMATO2='<img src="https://2.bp.blogspot.com/-i3xPt3TISb0/UWgWlyylbUI/AAAAAAAAQGo/JUtkdKSkloc/s1600/vegetable_tomato.png" alt="トマト2" width="120px" height="100px">';
@@ -31,11 +31,11 @@ var HI='<img src="https://3.bp.blogspot.com/-bTpI2R-Kxe0/Viio_KII7WI/AAAAAAAAztM
 var ME='<img src="https://2.bp.blogspot.com/-UNeJcdfWzIw/Wn1ZZObzwbI/AAAAAAABKL0/pyLhnj-bz8clSvYGOKpCNvZ_4kXxoXJcgCLcBGAs/s800/body_eye_color9_black.png" alt="目" width="100px" height="100px">';
 var SHINBUNSHI='<img src="https://3.bp.blogspot.com/--hFzOAXOk-Y/Wn1aH38lQvI/AAAAAAABKSQ/bFMS6Hoae8kQpwi2y4SzdEBScWCC7j6RACLcBGAs/s400/news_shinbunshi.png" alt="新聞紙" width="100px" height="100px">';
 
-function makebutton(hiragana){
+function makebutton(ID,VALUE){
   var anchor=document.createElement('input');
   anchor.setAttribute("type","button");
-  anchor.setAttribute("id",hiragana);
-  anchor.setAttribute("value",hiragana);
+  anchor.setAttribute("id",ID);
+  anchor.setAttribute("value",VALUE);
   mojiDivided.appendChild(anchor);
 }
 
@@ -46,16 +46,16 @@ function pushed(moji){
   document.getElementById("ansstring").innerText=ansstr;
   console.log(ansstr);
   if(ansstr.length>60&&mojiDivided.childElementCount==2){
-    makebutton("ひ");
-    document.getElementById("ひ").onclick=pushed('ひ');
+    makebutton("hi","ひ");
+    document.getElementById("hi").onclick=pushed('ひ');
   }
   if(ansstr.length>120&&mojiDivided.childElementCount==3){
-    makebutton("め");
-    document.getElementById("め").onclick=pushed('め');
+    makebutton("me","め");
+    document.getElementById("me").onclick=pushed('め');
   }
   if(ansstr.length>300&&mojiDivided.childElementCount==4){
-    makebutton("しんぶんし");
-    document.getElementById("しんぶんし").onclick=pushed('しんぶんし');
+    makebutton("shinbunshi","しんぶんし");
+    document.getElementById("shinbunshi").onclick=pushed('しんぶんし');
   }
 }
 
