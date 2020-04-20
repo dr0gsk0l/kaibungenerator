@@ -16,7 +16,7 @@ body{
   font-size: large;
 }
 
-#と{
+#to{
   -webkit-appearance:none;
   width: 300px;
   height: 100px;
@@ -24,7 +24,7 @@ body{
   color: red;
 }
 
-#ま{
+#ma{
   -webkit-appearance:none;
   width: 300px;
   height: 100px;
@@ -32,7 +32,7 @@ body{
   color: green;
 }
 
-#ひ{
+#hi{
   -webkit-appearance:none;
   width: 300px;
   height: 100px;
@@ -40,7 +40,7 @@ body{
   color: blue;
 }
 
-#め{
+#me{
   -webkit-appearance:none;
   width: 300px;
   height: 100px;
@@ -48,7 +48,7 @@ body{
   color: pink;
 }
 
-#新聞紙{
+#shinbunshi{
   -webkit-appearance:none;
   width: 300px;
   height: 100px;
