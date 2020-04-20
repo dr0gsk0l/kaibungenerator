@@ -19,7 +19,7 @@ var MA='<img src="https://3.bp.blogspot.com/-m31LpaTSzy4/U32NRZQpjbI/AAAAAAAAgr0
 var HITOME='<img src="https://3.bp.blogspot.com/-9_vm6fBg8dw/V_4bzTx9OaI/AAAAAAAA-vc/7H75GLosPTYvV8Nd-K5zGTtviYzZQpFMwCLcB/s800/pose_nozoku_blind.png" alt="人目" width="100px" height="100px">';
 var HITOMATOME='<img src="https://3.bp.blogspot.com/-pF9-RWRttnE/UV1JHjxu-dI/AAAAAAAAPTY/roqGEIUYZRA/s450/key.png" alt="ひとまとめ" width="100px" height="100px">';
 var MATOME='<img src="https://4.bp.blogspot.com/-trtHL6GrztE/WWXXWKOmVDI/AAAAAAABFhk/75aMZKZCReErCPiZenZpT00mZvNjuV6XgCLcBGAs/s800/website_matome_site.png" alt="まとめ" width="100px" height="100px">';
-var HIHI='<img src="https://2.bp.blogspot.com/-yCY7N5N-UNg/ViipUz6xPRI/AAAAAAAAz1g/QtFlHr5sSrk/s800/eto_saru_mark.png" alt="ヒヒ" width="100px" height="100px">';
+var HIHI='<img src="https://twitter.com/259_Momone/status/1252176103554158595/photo/1" alt="ヒヒ" width="100px" height="100px">';
 var HIME='<img src="https://1.bp.blogspot.com/-dQHPshzm_tY/WaOePIs3e9I/AAAAAAABGLI/bvasBK5wZPIVPskCglfUp5itLsFfJJRGQCLcBGAs/s180-c/royal_princess.png" alt="姫" width="100px" height="100px">';
 var MAME='<img src="https://1.bp.blogspot.com/-UfAoUzcJCMs/Udy6oyQbj6I/AAAAAAAAWKQ/bD4waahGR6I/s400/food_endoumame.png" alt="豆" width="100px" height="100px">';
 var HITO='<img src="https://1.bp.blogspot.com/-sT0aNSDSNd8/W6DT3AoIEtI/AAAAAAABO_4/OH0B97M-Hu8lyzYFM6V1m-z0qCx-WV_bgCLcBGAs/s800/talk4_green_man.png" alt="人" width="100px" height="100px">';
@@ -119,7 +119,9 @@ document.getElementById("make").onclick=function(){
   ansimg+="あ";
   meisi=false;
   
-  if(tweetDivided.firstChild)return;
+  while (tweetDivided.firstChild){
+    tweetDivided.removeChild(tweetDivided.firstChild);
+  }
   const anchor = document.createElement('a');
   const hrefValue = 'https://twitter.com/intent/tweet?button_hashtag='
     + encodeURIComponent('クソ回文ジェネレーター')
