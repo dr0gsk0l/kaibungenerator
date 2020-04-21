@@ -26,3 +26,6 @@ var MAMATOHITO='<img src="https://2.bp.blogspot.com/-c27iEQIizZo/V2ucndSaVhI/AAA
 var MASHINE='<img src="https://1.bp.blogspot.com/-A4669A-c7Iw/Vq89EUvfqdI/AAAAAAAA3lY/N7Uzmc-426k/s400/machine_yubisashi_kosyou.png" alt="マシン" width="100px" height="100px">';
 var BUNSHI='<img src="https://3.bp.blogspot.com/-Ac8SaHcmlMA/WIW-Ok_GUjI/AAAAAAABBS0/BoAOJqIHeco19fiET1tN2tF3NJ_tv_Z7wCLcB/s400/kagaku_bunshi.png" alt="分子" width="100px" height="100px">';
 var HITONANA='<img src="https://1.bp.blogspot.com/-9pDsJGXvNk4/XWS5fc5quiI/AAAAAAABUS8/xACX0wOId9U_NxqL80sNEcL96Bx_Qs4tQCLcBGAs/s1600/group_family_asia.png" alt="七人" width="123px" height="100px">';
+var PHOENIX='<img src="https://4.bp.blogspot.com/-Kjy40xCs8g0/WCVeHw2fVoI/AAAAAAAA_dg/LHTwcW-5d04rut1zmPgCKlUv2KBw20t3gCLcB/s800/youkai_suzaku.png" alt="フェニックス" width="77px" height="100px">';
+var KUTUNIF='<img src="./fashion_slip-on.png" alt="靴にF" width="110px" height="100px">';
+var PHOENIXKUTUNIF='<img src="./youkai_suzaku.png" alt="フェニックス靴にF" width="77px" height="100px">';
