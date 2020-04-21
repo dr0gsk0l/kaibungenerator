@@ -8,35 +8,6 @@ makebutton("ma","ま");
 document.getElementById("to").onclick=function(){pushed('と')};
 document.getElementById("ma").onclick=function(){pushed('ま')};
 
-var TOMATO='<img src="https://4.bp.blogspot.com/-FlkEDz3wQSc/Vtw1wrbo6AI/AAAAAAAA4fk/k8tfPNkMvb4/s800/tomato_red.png" alt="トマト" width="100px" height="100px">';
-var TOMATO2='<img src="https://2.bp.blogspot.com/-i3xPt3TISb0/UWgWlyylbUI/AAAAAAAAQGo/JUtkdKSkloc/s1600/vegetable_tomato.png" alt="トマト2" width="120px" height="100px">';
-var MAMA='<img src="https://3.bp.blogspot.com/-Tsx2ag1qcVk/UNO5bQwAElI/AAAAAAAAIx8/jwOIg9WO8L8/s1600/apron_mama.png" alt="ママ" width="50px" height="100px">';
-var MAMA2='<img src="https://3.bp.blogspot.com/-x2DitymfGAo/UnyHS2DYEZI/AAAAAAAAahQ/HDhiTG4b4n8/s800/cooking_mama.png" alt="ママ2" width="100px" height="100px">';
-var MAMA3='<img src="https://2.bp.blogspot.com/-M28y-PtBkHM/Uj_28pHhwWI/AAAAAAAAYE0/9HYKZ4HErwE/s800/mother_angry.png" alt="ママ3" width="90px" height="100px">';
-var MATO='<img src="https://3.bp.blogspot.com/-OBwWX1xu1xc/WGnPb8Ly_HI/AAAAAAABA60/Qu-WGOBcSicVM8iSXq2xxXQcpRZE7zyWQCLcB/s800/sports_archery_mato1.png" alt="的" width="100px" height="100px">';
-var TO='<img src="https://2.bp.blogspot.com/-6noe-4G5FNU/V2ubhr0UDKI/AAAAAAAA7pY/nHp2zGXHshkiwzUxYa5RQVf-pcwn31GSACLcB/s800/door_half_open.png" alt="戸" width="50px" height="100px">';
-var MA='<img src="https://3.bp.blogspot.com/-m31LpaTSzy4/U32NRZQpjbI/AAAAAAAAgr0/xx3csFTzTJ8/s800/character_akuma.png" alt="悪魔" width="60px" height="100px">';
-var HITOME='<img src="https://3.bp.blogspot.com/-9_vm6fBg8dw/V_4bzTx9OaI/AAAAAAAA-vc/7H75GLosPTYvV8Nd-K5zGTtviYzZQpFMwCLcB/s800/pose_nozoku_blind.png" alt="人目" width="100px" height="100px">';
-var HITOMATOME='<img src="https://3.bp.blogspot.com/-pF9-RWRttnE/UV1JHjxu-dI/AAAAAAAAPTY/roqGEIUYZRA/s450/key.png" alt="ひとまとめ" width="100px" height="100px">';
-var MATOME='<img src="https://4.bp.blogspot.com/-trtHL6GrztE/WWXXWKOmVDI/AAAAAAABFhk/75aMZKZCReErCPiZenZpT00mZvNjuV6XgCLcBGAs/s800/website_matome_site.png" alt="まとめ" width="100px" height="100px">';
-var HIHI='<img src="https://pbs.twimg.com/media/EWCfhqYUEAEwuIu?format=png&name=small" alt="ヒヒ" width="100px" height="100px">';
-var HIME='<img src="https://1.bp.blogspot.com/-dQHPshzm_tY/WaOePIs3e9I/AAAAAAABGLI/bvasBK5wZPIVPskCglfUp5itLsFfJJRGQCLcBGAs/s180-c/royal_princess.png" alt="姫" width="100px" height="100px">';
-var MAME='<img src="https://1.bp.blogspot.com/-UfAoUzcJCMs/Udy6oyQbj6I/AAAAAAAAWKQ/bD4waahGR6I/s400/food_endoumame.png" alt="豆" width="100px" height="100px">';
-var HITO='<img src="https://1.bp.blogspot.com/-sT0aNSDSNd8/W6DT3AoIEtI/AAAAAAABO_4/OH0B97M-Hu8lyzYFM6V1m-z0qCx-WV_bgCLcBGAs/s800/talk4_green_man.png" alt="人" width="70px" height="100px">';
-var HITO2='<img src="https://1.bp.blogspot.com/-BU_JEXiwX-U/XRHH8c8Se3I/AAAAAAABTYU/i1I_GS0HawoaiktSasQM5M5tbb1Z_NgaQCLcBGAs/s800/ryuugakusei_daigaku_black_man.png" alt="人" width="54px" height="100px">';
-var HITO3='<img src="https://4.bp.blogspot.com/-3ucwJP0Yc3Y/W6DT4kRm1BI/AAAAAAABPAI/FY6w2WWEVQcleBVoNKXWGGFUNVBfB9LkwCLcBGAs/s800/talk9_brown_man.png" alt="人" width="77px" height="100px">';
-var HITO4='<img src="https://1.bp.blogspot.com/-dgtkP4wAOnk/W6DT38rTvOI/AAAAAAABPAA/fvIweeOxx9AfkNTFQ3OOKXzcPXqlzH7VACLcBGAs/s800/talk7_blue_man.png" alt="人" width="77px" height="100px">';
-var HITO5='<img src="https://1.bp.blogspot.com/-HqzQ05aA7xE/XWS5iiw_2uI/AAAAAAABUTs/VJuekgkFXDU2PLpdQYnXNrce42U9nY0rwCLcBGAs/s1600/kakedasu_people2.png" alt="人" width="55px" height="100px">';
-var HIMA='<img src="https://3.bp.blogspot.com/-fImkQ-EyglU/VJF_oRM5p4I/AAAAAAAAp5I/N4jypFga8ew/s400/hima_taikutsu.png" alt="暇" width="100px" height="100px">';
-var MAHI='<img src="https://4.bp.blogspot.com/-354gcMIxGnE/WYAxp9UjnxI/AAAAAAABFuc/uzU1pPFBlwkcq47izNs9UnP9_7SvRIYeQCLcBGAs/s800/body_mahi_man.png" alt="麻痺" width="60px" height="100px">';
-var HI='<img src="https://3.bp.blogspot.com/-bTpI2R-Kxe0/Viio_KII7WI/AAAAAAAAztM/oNokVj_uJyI/s400/honoo_hi_fire.png" alt="火" width="100px" height="100px">';
-var ME='<img src="https://2.bp.blogspot.com/-UNeJcdfWzIw/Wn1ZZObzwbI/AAAAAAABKL0/pyLhnj-bz8clSvYGOKpCNvZ_4kXxoXJcgCLcBGAs/s800/body_eye_color9_black.png" alt="目" width="100px" height="100px">';
-var SHINBUNSHI='<img src="https://3.bp.blogspot.com/--hFzOAXOk-Y/Wn1aH38lQvI/AAAAAAABKSQ/bFMS6Hoae8kQpwi2y4SzdEBScWCC7j6RACLcBGAs/s400/news_shinbunshi.png" alt="新聞紙" width="100px" height="100px">';
-var MAMATOHITO='<img src="https://2.bp.blogspot.com/-c27iEQIizZo/V2ucndSaVhI/AAAAAAAA70w/PFSPB_npLCoULgUUn4ltSWAsLoASMN54gCLcB/s800/uwaki_genba_woman.png" alt="ママと人" width="100px" height="100px">';
-var MASHINE='<img src="https://1.bp.blogspot.com/-A4669A-c7Iw/Vq89EUvfqdI/AAAAAAAA3lY/N7Uzmc-426k/s400/machine_yubisashi_kosyou.png" alt="マシン" width="100px" height="100px">';
-var BUNSHI='<img src="https://3.bp.blogspot.com/-Ac8SaHcmlMA/WIW-Ok_GUjI/AAAAAAABBS0/BoAOJqIHeco19fiET1tN2tF3NJ_tv_Z7wCLcB/s400/kagaku_bunshi.png" alt="分子" width="100px" height="100px">';
-var HITONANA='<img src="https://1.bp.blogspot.com/-9pDsJGXvNk4/XWS5fc5quiI/AAAAAAABUS8/xACX0wOId9U_NxqL80sNEcL96Bx_Qs4tQCLcBGAs/s1600/group_family_asia.png" alt="七人" width="123px" height="100px">';
-
 function makebutton(ID,VALUE){
   var anchor=document.createElement('input');
   anchor.setAttribute("type","button");
