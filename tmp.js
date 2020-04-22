@@ -66,6 +66,22 @@ document.getElementById("make").onclick=function(){
     document.getElementById("ansimg").innerHTML=MAJU[now%11];
     document.getElementById("ansstring").innerText=MAJUNAME[now%11];
     ansimg="あ";
+    while (tweetDivided.firstChild){
+      tweetDivided.removeChild(tweetDivided.firstChild);
+    }
+    const anchor = document.createElement('a');
+    const hrefValue = 'https://twitter.com/intent/tweet?button_hashtag='
+      + encodeURIComponent('クソ魔獣ジェネレーター')
+      + '&ref_src=twsrc%5Etfw';
+    anchor.setAttribute('href', hrefValue);
+    anchor.className = 'twitter-hashtag-button';
+    anchor.setAttribute('data-text', tmp+' https://dr0gsk0l.github.io/kaibungenerator/tmp.html');
+    anchor.innerText = 'Tweet #クソ魔獣ジェネレーター';
+    tweetDivided.appendChild(anchor);
+    
+    const script = document.createElement('script');
+    script.setAttribute('src', 'https://platform.twitter.com/widgets.js');
+    tweetDivided.appendChild(script);
     return;
   }
   if(ansimg.length)return;
