@@ -34,6 +34,16 @@ function pushed(moji){
     makebutton("shinbunshi","しんぶんし");
     document.getElementById("shinbunshi").onclick=function(){pushed('しんぶんし')};
   }
+  if(ansstr=="まままままままままま"){
+    document.getElementById("make").value="魔獣作成";
+    document.getElementById("letsmake").innerText="君だけの魔獣を作ろう!";
+    document.title="魔獣ジェネレーター";
+  }
+  else{
+    document.getElementById("make").value=document.h1="回文作成";
+    document.getElementById("letsmake").innerText="君だけの回文を作ろう!";
+    document.title="回文ジェネレーター";
+  }
 }
 
 document.getElementById("reset").onclick=function(){
@@ -51,6 +61,13 @@ function change(num,from,to,img){
 }
 
 document.getElementById("make").onclick=function(){
+  if(ansstr=="まままままままままま"){
+    var now=new Date();
+    document.getElementById("ansimg").innerHTML=MAJU[now%11];
+    document.getElementById("ansstring").innerText=MAJUNAME[now%11];
+    ansimg="あ";
+    return;
+  }
   if(ansimg.length)return;
   for(var i=ansstr.length-1;i>=0;i--)ansstr+=ansstr[i];
   ansstr+='#####################################';
