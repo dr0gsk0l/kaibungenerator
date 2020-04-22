@@ -75,7 +75,7 @@ document.getElementById("make").onclick=function(){
       + '&ref_src=twsrc%5Etfw';
     anchor.setAttribute('href', hrefValue);
     anchor.className = 'twitter-hashtag-button';
-    anchor.setAttribute('data-text', tmp+' https://dr0gsk0l.github.io/kaibungenerator/tmp.html');
+    anchor.setAttribute('data-text', MAJUNAME[now%11]+' https://dr0gsk0l.github.io/kaibungenerator/tmp.html');
     anchor.innerText = 'Tweet #クソ魔獣ジェネレーター';
     tweetDivided.appendChild(anchor);
     
