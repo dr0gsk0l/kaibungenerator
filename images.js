@@ -26,3 +26,19 @@ var MAMATOHITO='<img src="https://2.bp.blogspot.com/-c27iEQIizZo/V2ucndSaVhI/AAA
 var MASHINE='<img src="https://1.bp.blogspot.com/-A4669A-c7Iw/Vq89EUvfqdI/AAAAAAAA3lY/N7Uzmc-426k/s400/machine_yubisashi_kosyou.png" alt="マシン" width="100px" height="100px">';
 var BUNSHI='<img src="https://3.bp.blogspot.com/-Ac8SaHcmlMA/WIW-Ok_GUjI/AAAAAAABBS0/BoAOJqIHeco19fiET1tN2tF3NJ_tv_Z7wCLcB/s400/kagaku_bunshi.png" alt="分子" width="100px" height="100px">';
 var HITONANA='<img src="https://1.bp.blogspot.com/-9pDsJGXvNk4/XWS5fc5quiI/AAAAAAABUS8/xACX0wOId9U_NxqL80sNEcL96Bx_Qs4tQCLcBGAs/s1600/group_family_asia.png" alt="七人" width="123px" height="100px">';
+var MAJU=[
+  '<img src="https://1.bp.blogspot.com/-Zg3Rhwl3Np4/VuKENvWUmLI/AAAAAAAA4x8/ltMQ0pH0zR071jtfl8sG7mS3SQTJdh0iQ/s800/uma_chupacabra_new.png"  width=auto height="300px">',
+  '<img src="https://3.bp.blogspot.com/-GRGQEnE3UqA/UT10SkjkLMI/AAAAAAAAOvE/3vk4npeqTFg/s400/youkai_kirin.png"  width=auto height="300px">',
+  '<img src="https://3.bp.blogspot.com/-efiP_VuiSs8/WvkK6D5maMI/AAAAAAABMCY/-3dDSL_pTkc5LiuUnu0EEgs3TL4be1bpgCPcBGAYYCw/s800/fantasy_yamata_red.png"  width=auto height="300px">',
+  '<img src="https://4.bp.blogspot.com/-6p79nzYZn-Q/UT10LFSwRXI/AAAAAAAAOss/X6_1oWkCecs/s450/fantasy_yamata.png"  width=auto height="300px">',
+  '<img src="https://4.bp.blogspot.com/-gKPQ9hjH4Vs/UT10IwHX8nI/AAAAAAAAOsE/Hesj5Cuhs4o/s400/fantasy_ogre.png"  width=auto height="300px">',
+  '<img src="https://3.bp.blogspot.com/-zs4Ab_aVoac/UT10H2mvixI/AAAAAAAAOr8/skuRZVt4nDQ/s400/fantasy_goblin.png"  width=auto height="300px">',
+  '<img src="https://3.bp.blogspot.com/-i-FxBmcAJg4/UT10Kvl0MJI/AAAAAAAAOsk/knkH22IM-DQ/s400/fantasy_wolfman.png"  width=auto height="300px">',
+  '<img src="https://4.bp.blogspot.com/-yr7B9IanNcY/Wn1V29LFeVI/AAAAAAABKF4/jUBITNcwgXE4QpD4coaOyE7HngsxND2RwCLcBGAs/s400/fantasy_mandrake_mandragora.png"  width=auto height="300px">',
+  '<img src="https://3.bp.blogspot.com/-LKAxA70lNJc/WUdYUs_hdwI/AAAAAAABE6c/zIdhHJeM_k0zUGE-lrpwCOHcx2H9XPLrgCLcBGAs/s400/character_nue.png"  width=auto height="300px">',
+  '<img src="https://2.bp.blogspot.com/-VhHMAZ8DaJo/WdyDWty_RjI/AAAAAAABHb0/dt3MgtVS_XYsIjwhnvdFus8NGl8TDSc-wCLcBGAs/s400/fantasy_manticore.png"  width=auto height="300px">',
+  '<img src="https://4.bp.blogspot.com/-j_DQJHL6P7Q/WCqrsS08a9I/AAAAAAAA_tg/ScJNzIFkHsUeFK9A_1Xdp9Ogy5jg8Rk7QCLcB/s400/fantasy_baku.png"  width=auto height="300px">',
+];
+var MAJUNAME=[
+  "チュパカブラ","麒麟","ヤマタノオロチ","ヤマタノオロチ","オーガ","ゴブリン","狼男","マンドレイク","鵺","マンティコア","貘"
+];
