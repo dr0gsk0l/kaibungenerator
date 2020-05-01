@@ -87,6 +87,7 @@ document.getElementById("make").onclick=function(){
   }
   if(ansimg.length)return;
   if(++cntplay==10){
+    console.log("DP button");
     var Anchor=document.createElement('input');
     Anchor.setAttribute("type","button");
     Anchor.setAttribute("id","DP");
