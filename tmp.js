@@ -89,8 +89,8 @@ document.getElementById("make").onclick=function(){
   if(++cntplay==10){
     var Anchor=document.createElement('input');
     Anchor.setAttribute("type","button");
-    Anchor.setAttribute("id",DP);
-    Anchor.setAttribute("value",DP作成);
+    Anchor.setAttribute("id","DP");
+    Anchor.setAttribute("value","DP作成");
     submitDivided.appendChild(Anchor);
   }
   for(var i=ansstr.length-1;i>=0;i--)ansstr+=ansstr[i];
