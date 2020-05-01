@@ -3,7 +3,8 @@ const tweetDivided = document.getElementById('tweet');
 const mojiDivided = document.getElementById('moji');
 const submitDivided = document.getElementById('Make');
 
-var MAKE=document.createElement('button');
+var MAKE=document.createElement('input');
+MAKE.setAttribute("type","button");
 MAKE.setAttribute("id","make");
 MAKE.setAttribute("value","回文作成");
 submitDivided.appendChild(MAKE);
@@ -93,7 +94,8 @@ document.getElementById("make").onclick=function(){
   if(ansimg.length)return;
   if(++cntplay==10){
     console.log("DP button");
-    var Anchor=document.createElement('button');
+    var Anchor=document.createElement('input');
+    Anchor.setAttribute("type","button");
     Anchor.setAttribute("id","DP");
     Anchor.setAttribute("value","DP作成");
     submitDivided.appendChild(Anchor);
