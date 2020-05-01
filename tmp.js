@@ -86,7 +86,7 @@ document.getElementById("make").onclick=function(){
     return;
   }
   if(ansimg.length)return;
-  if(++cnt==10){
+  if(++cntplay==10){
     var Anchor=document.createElement('input');
     Anchor.setAttribute("type","button");
     Anchor.setAttribute("id",DP);
