@@ -12,6 +12,16 @@ body{
   color: aliceblue;
 }
 
+#DP{
+  -webkit-appearance:none;
+  background-color: blue;
+  width: 150px;
+  height: 80px;
+  font-size: x-large;
+  font-style: oblique;
+  color: aliceblue;
+}
+
 #ansstring{
   font-size: large;
 }
