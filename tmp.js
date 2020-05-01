@@ -1,7 +1,12 @@
 var ansstr="",ansimg="",meisi=false,idx,tmp="",cntplay=0;
 const tweetDivided = document.getElementById('tweet');
 const mojiDivided = document.getElementById('moji');
-const submitDivided = document.getElementById('make');
+const submitDivided = document.getElementById('Make');
+
+var MAKE=document.createElement('button');
+MEKE.setAttribute("id","make");
+MALE.setAttribute("value","回文作成");
+submitDivided.appendChild(MAKE);
 
 document.getElementById("ansstring").innerText="ボタンを押してね";
 makebutton("to","と");
@@ -88,8 +93,7 @@ document.getElementById("make").onclick=function(){
   if(ansimg.length)return;
   if(++cntplay==10){
     console.log("DP button");
-    var Anchor=document.createElement('input');
-    Anchor.setAttribute("type","button");
+    var Anchor=document.createElement('button');
     Anchor.setAttribute("id","DP");
     Anchor.setAttribute("value","DP作成");
     submitDivided.appendChild(Anchor);
@@ -203,7 +207,7 @@ document.getElementById("DP").onclick=function(){
     console.log('error');
     break;
   }
-  document.getElementById("ansstring").innerText=tmp;
+  document.getElementById("ansstring").innerText=tmp+"DP";
   document.getElementById("ansimg").innerHTML=ansimg;
   
   ansimg+="あ";
@@ -214,7 +218,7 @@ document.getElementById("DP").onclick=function(){
   }
   const anchor = document.createElement('a');
   const hrefValue = 'https://twitter.com/intent/tweet?button_hashtag='
-    + encodeURIComponent('クソPジェネレーター')
+    + encodeURIComponent('クソDPジェネレーター')
     + '&ref_src=twsrc%5Etfw';
   anchor.setAttribute('href', hrefValue);
   anchor.className = 'twitter-hashtag-button';
