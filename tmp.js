@@ -93,6 +93,7 @@ document.getElementById("make").onclick=function(){
     Anchor.setAttribute("value","DP作成");
     submitDivided.appendChild(Anchor);
   }
+  console.log("play回数:"+cntplay);
   for(var i=ansstr.length-1;i>=0;i--)ansstr+=ansstr[i];
   ansstr+='#####################################';
   tmp="";
