@@ -97,6 +97,72 @@ document.getElementById("make").onclick=function(){
     Anchor.setAttribute("id","DP");
     Anchor.setAttribute("value","DP作成");
     submitDivided.appendChild(Anchor);
+    document.getElementById("DP").onclick=function(){
+      if(ansimg.length)return;
+      ansstr+='#####################################';
+      tmp="";
+      idx=0;
+      while(ansstr[idx]!='#'){
+        if(meisi&&ansstr[idx]=='と'&&ansstr[idx+1]!='#'){
+          tmp+='と';
+          meisi=false;
+          idx++;continue;
+        }
+        if(meisi)tmp+='、';
+        if(change(6,'ましんぶんし','マシン、分子',MASHINE+' '+BUNSHI))continue;
+        if(change(20,'ひととひととひととひととひととひととひと','人と人と人と人と人と人と人',HITONANA))continue;
+        if(idx%30==15){if(change(3,'とまと','トマト',TOMATO2))continue;}
+        else if(change(3,'とまと','トマト',TOMATO))continue;
+        if(change(5,'ままとひと','ママと人',MAMATOHITO))continue;
+        if(change(5,'ひととまま','人とママ',MAMATOHITO))continue;
+        if(idx%40==10){if(change(2,'まま','ママ',MAMA2))continue;}
+        else if(idx%40==21){if(change(2,'まま','ママ',MAMA3))continue;}
+        else if(change(2,'まま','ママ',MAMA))continue;
+        if(change(2,'まめ','豆',MAME))continue;
+        if(change(3,'まとめ','まとめ',MATOME))continue;
+        if(change(5,'ひとまとめ','ひとまとめ',HITOMATOME))continue;
+        if(change(2,'ひひ','ヒヒ',HIHI))continue;
+        if(change(3,'ひとめ','人目',HITOME))continue;
+        if(change(2,'ひめ','姫',HIME))continue;
+        if(idx%5==0)if(change(2,'ひと','人',HITO))continue;
+        if(idx%5==1)if(change(2,'ひと','人',HITO2))continue;
+        if(idx%5==2)if(change(2,'ひと','人',HITO3))continue;
+        if(idx%5==3)if(change(2,'ひと','人',HITO4))continue;
+        if(idx%5==4)if(change(2,'ひと','人',HITO5))continue;
+        if(change(2,'まひ','麻痺',MAHI))continue;
+        if(change(2,'ひま','暇',HIMA))continue;
+        if(change(2,'まと','的',MATO))continue;
+        if(change(1,'と','戸',TO))continue;
+        if(change(1,'ま','魔',MA))continue;
+        if(change(1,'ひ','火',HI))continue;
+        if(change(1,'め','目',ME))continue;
+        if(change(5,'しんぶんし','新聞紙',SHINBUNSHI))continue;
+        console.log('error');
+        break;
+      }
+      document.getElementById("ansstring").innerText=tmp+"DP";
+      document.getElementById("ansimg").innerHTML=ansimg;
+
+      ansimg+="あ";
+      meisi=false;
+
+      while (tweetDivided.firstChild){
+        tweetDivided.removeChild(tweetDivided.firstChild);
+      }
+      const anchor = document.createElement('a');
+      const hrefValue = 'https://twitter.com/intent/tweet?button_hashtag='
+        + encodeURIComponent('クソDPジェネレーター')
+        + '&ref_src=twsrc%5Etfw';
+      anchor.setAttribute('href', hrefValue);
+      anchor.className = 'twitter-hashtag-button';
+      anchor.setAttribute('data-text', tmp+' https://dr0gsk0l.github.io/kaibungenerator/tmp.html');
+      anchor.innerText = 'Tweet #クソDPジェネレーター';
+      tweetDivided.appendChild(anchor);
+
+      const script = document.createElement('script');
+      script.setAttribute('src', 'https://platform.twitter.com/widgets.js');
+      tweetDivided.appendChild(script);
+    }
   }
   console.log("play回数:"+cntplay);
   for(var i=ansstr.length-1;i>=0;i--)ansstr+=ansstr[i];
@@ -164,69 +230,4 @@ document.getElementById("make").onclick=function(){
   script.setAttribute('src', 'https://platform.twitter.com/widgets.js');
   tweetDivided.appendChild(script);
 }
-document.getElementById("DP").onclick=function(){
-  if(ansimg.length)return;
-  ansstr+='#####################################';
-  tmp="";
-  idx=0;
-  while(ansstr[idx]!='#'){
-    if(meisi&&ansstr[idx]=='と'&&ansstr[idx+1]!='#'){
-      tmp+='と';
-      meisi=false;
-      idx++;continue;
-    }
-    if(meisi)tmp+='、';
-    if(change(6,'ましんぶんし','マシン、分子',MASHINE+' '+BUNSHI))continue;
-    if(change(20,'ひととひととひととひととひととひととひと','人と人と人と人と人と人と人',HITONANA))continue;
-    if(idx%30==15){if(change(3,'とまと','トマト',TOMATO2))continue;}
-    else if(change(3,'とまと','トマト',TOMATO))continue;
-    if(change(5,'ままとひと','ママと人',MAMATOHITO))continue;
-    if(change(5,'ひととまま','人とママ',MAMATOHITO))continue;
-    if(idx%40==10){if(change(2,'まま','ママ',MAMA2))continue;}
-    else if(idx%40==21){if(change(2,'まま','ママ',MAMA3))continue;}
-    else if(change(2,'まま','ママ',MAMA))continue;
-    if(change(2,'まめ','豆',MAME))continue;
-    if(change(3,'まとめ','まとめ',MATOME))continue;
-    if(change(5,'ひとまとめ','ひとまとめ',HITOMATOME))continue;
-    if(change(2,'ひひ','ヒヒ',HIHI))continue;
-    if(change(3,'ひとめ','人目',HITOME))continue;
-    if(change(2,'ひめ','姫',HIME))continue;
-    if(idx%5==0)if(change(2,'ひと','人',HITO))continue;
-    if(idx%5==1)if(change(2,'ひと','人',HITO2))continue;
-    if(idx%5==2)if(change(2,'ひと','人',HITO3))continue;
-    if(idx%5==3)if(change(2,'ひと','人',HITO4))continue;
-    if(idx%5==4)if(change(2,'ひと','人',HITO5))continue;
-    if(change(2,'まひ','麻痺',MAHI))continue;
-    if(change(2,'ひま','暇',HIMA))continue;
-    if(change(2,'まと','的',MATO))continue;
-    if(change(1,'と','戸',TO))continue;
-    if(change(1,'ま','魔',MA))continue;
-    if(change(1,'ひ','火',HI))continue;
-    if(change(1,'め','目',ME))continue;
-    if(change(5,'しんぶんし','新聞紙',SHINBUNSHI))continue;
-    console.log('error');
-    break;
-  }
-  document.getElementById("ansstring").innerText=tmp+"DP";
-  document.getElementById("ansimg").innerHTML=ansimg;
-  
-  ansimg+="あ";
-  meisi=false;
-  
-  while (tweetDivided.firstChild){
-    tweetDivided.removeChild(tweetDivided.firstChild);
-  }
-  const anchor = document.createElement('a');
-  const hrefValue = 'https://twitter.com/intent/tweet?button_hashtag='
-    + encodeURIComponent('クソDPジェネレーター')
-    + '&ref_src=twsrc%5Etfw';
-  anchor.setAttribute('href', hrefValue);
-  anchor.className = 'twitter-hashtag-button';
-  anchor.setAttribute('data-text', tmp+' https://dr0gsk0l.github.io/kaibungenerator/tmp.html');
-  anchor.innerText = 'Tweet #クソDPジェネレーター';
-  tweetDivided.appendChild(anchor);
-  
-  const script = document.createElement('script');
-  script.setAttribute('src', 'https://platform.twitter.com/widgets.js');
-  tweetDivided.appendChild(script);
-}
+
