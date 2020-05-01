@@ -100,7 +100,9 @@ document.getElementById("make").onclick=function(){
     Anchor.setAttribute("value","DP作成");
     submitDivided.appendChild(Anchor);
     document.getElementById("DP").onclick=function(){
-      if(ansimg=="まじ")tmp=document.getElementById("ansstring").innerText+"DP";
+      if(ansimg=="まじ"){
+        document.getElementById("ansstring").innerText=document.getElementById("ansstring").innerText+"DP";
+      }
       else if(ansimg.length)return;
       if(!ansimg.length){
         ansstr+='#####################################';
@@ -144,10 +146,10 @@ document.getElementById("make").onclick=function(){
           console.log('error');
           break;
         }
+        tmp+="DP";
+        document.getElementById("ansstring").innerText=tmp;
+        document.getElementById("ansimg").innerHTML=ansimg;
       }
-      tmp+="DP";
-      document.getElementById("ansstring").innerText=tmp;
-      document.getElementById("ansimg").innerHTML=ansimg;
 
       ansimg+="あ";
       meisi=false;
