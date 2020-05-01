@@ -101,7 +101,8 @@ document.getElementById("make").onclick=function(){
     submitDivided.appendChild(Anchor);
     document.getElementById("DP").onclick=function(){
       if(ansimg=="まじ"){
-        document.getElementById("ansstring").innerText=document.getElementById("ansstring").innerText+"DP";
+        tmp=document.getElementById("ansstring").innerText+"DP"
+        document.getElementById("ansstring").innerText=tmp;
       }
       else if(ansimg.length)return;
       if(!ansimg.length){
