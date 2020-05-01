@@ -4,8 +4,8 @@ const mojiDivided = document.getElementById('moji');
 const submitDivided = document.getElementById('Make');
 
 var MAKE=document.createElement('button');
-MEKE.setAttribute("id","make");
-MALE.setAttribute("value","回文作成");
+MAKE.setAttribute("id","make");
+MAKE.setAttribute("value","回文作成");
 submitDivided.appendChild(MAKE);
 
 document.getElementById("ansstring").innerText="ボタンを押してね";
