@@ -142,7 +142,8 @@ document.getElementById("make").onclick=function(){
         console.log('error');
         break;
       }
-      document.getElementById("ansstring").innerText=tmp+"DP";
+      tmp+="DP";
+      document.getElementById("ansstring").innerText=tmp;
       document.getElementById("ansimg").innerHTML=ansimg;
 
       ansimg+="あ";
