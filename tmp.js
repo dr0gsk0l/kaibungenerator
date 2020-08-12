@@ -1,4 +1,4 @@
-var ansstr="",ansimg="",meisi=false,idx,tmp="",cntplay=0;
+var ansstr="",ansimg="",meisi=false,idx,tmp="",cntplay=0,rndm=0;
 const tweetDivided = document.getElementById('tweet');
 const mojiDivided = document.getElementById('moji');
 const submitDivided = document.getElementById('Make');
@@ -92,7 +92,7 @@ document.getElementById("make").onclick=function(){
     return;
   }
   if(ansimg.length)return;
-  if(++cntplay==10){
+  if(++cntplay==-1){//キャンセル
     console.log("DP button");
     var Anchor=document.createElement('input');
     Anchor.setAttribute("type","button");
@@ -174,7 +174,8 @@ document.getElementById("make").onclick=function(){
     }
   }
   console.log("play回数:"+cntplay);
-  for(var i=ansstr.length-1;i>=0;i--)ansstr+=ansstr[i];
+  rndm=getRandomInt(2);
+  for(var i=ansstr.length-1-rndm;i>=0;i--)ansstr+=ansstr[i];
   ansstr+='#####################################';
   tmp="";
   idx=0;
