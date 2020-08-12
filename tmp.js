@@ -174,8 +174,7 @@ document.getElementById("make").onclick=function(){
     }
   }
   console.log("play回数:"+cntplay);
-  rndm=getRandomInt(2);
-  for(var i=ansstr.length-1-rndm;i>=0;i--)ansstr+=ansstr[i];
+  for(var i=ansstr.length-1;i>=0;i--)ansstr+=ansstr[i];
   ansstr+='#####################################';
   tmp="";
   idx=0;
