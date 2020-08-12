@@ -3,6 +3,10 @@ const tweetDivided = document.getElementById('tweet');
 const mojiDivided = document.getElementById('moji');
 const submitDivided = document.getElementById('Make');
 
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
 var MAKE=document.createElement('input');
 MAKE.setAttribute("type","button");
 MAKE.setAttribute("id","make");
@@ -85,7 +89,7 @@ document.getElementById("make").onclick=function(){
     anchor.setAttribute('data-text', MAJUNAME[now%11]+' https://dr0gsk0l.github.io/kaibungenerator/tmp.html');
     anchor.innerText = 'Tweet #クソ魔獣ジェネレーター';
     tweetDivided.appendChild(anchor);
-    
+
     const script = document.createElement('script');
     script.setAttribute('src', 'https://platform.twitter.com/widgets.js');
     tweetDivided.appendChild(script);
@@ -174,7 +178,8 @@ document.getElementById("make").onclick=function(){
     }
   }
   console.log("play回数:"+cntplay);
-  for(var i=ansstr.length-1;i>=0;i--)ansstr+=ansstr[i];
+  rndm=getRandomInt(2)
+  for(var i=ansstr.length-1-rndm;i>=0;i--)ansstr+=ansstr[i];
   ansstr+='#####################################';
   tmp="";
   idx=0;
@@ -218,10 +223,10 @@ document.getElementById("make").onclick=function(){
   }
   document.getElementById("ansstring").innerText=tmp;
   document.getElementById("ansimg").innerHTML=ansimg;
-  
+
   ansimg+="あ";
   meisi=false;
-  
+
   while (tweetDivided.firstChild){
     tweetDivided.removeChild(tweetDivided.firstChild);
   }
@@ -234,9 +239,8 @@ document.getElementById("make").onclick=function(){
   anchor.setAttribute('data-text', tmp+' https://dr0gsk0l.github.io/kaibungenerator/tmp.html');
   anchor.innerText = 'Tweet #クソ回文ジェネレーター';
   tweetDivided.appendChild(anchor);
-  
+
   const script = document.createElement('script');
   script.setAttribute('src', 'https://platform.twitter.com/widgets.js');
   tweetDivided.appendChild(script);
 }
-
