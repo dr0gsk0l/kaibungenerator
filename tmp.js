@@ -182,6 +182,7 @@ document.getElementById("make").onclick=function(){
   }
   console.log("play回数:"+cntplay);
   rndm=getRandomInt(2)
+  if(ansstr[ansstr.length-1]=='し')rndm=0;
   for(var i=ansstr.length-1-rndm;i>=0;i--)ansstr+=ansstr[i];
   mojinagasa=ansstr.length;
   ansstr+='#####################################';
