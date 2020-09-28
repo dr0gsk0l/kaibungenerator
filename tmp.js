@@ -227,7 +227,7 @@ document.getElementById("make").onclick=function(){
     console.log('error');
     break;
   }
-  let point=Math.round(10000*(mojinagasa%100)/Math.log(mojinagasa*tangosuu+1-shuruisuu.size));
+  let point=Math.round(10000*(mojinagasa%100)/(1+Math.abs(Math.log(mojinagasa*tangosuu+1-shuruisuu.size))));
   document.getElementById("ansstring").innerText=tmp;
   document.getElementById("point").innerText=point+'points!';
   document.getElementById("ansimg").innerHTML=ansimg;
