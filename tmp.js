@@ -70,6 +70,7 @@ function change(num,from,to,img){
   ansimg+=img+' ';
   meisi=true;
   tangosuu++;
+  if(from=='ましんぶんし')tangosuu++;
   shuruisuu.add(to);
   return true;
 }
