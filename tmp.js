@@ -1,4 +1,5 @@
-var ansstr="",ansimg="",meisi=false,idx,tmp="",cntplay=0,rndm=0;
+var ansstr="",ansimg="",meisi=false,idx,tmp="",cntplay=0,rndm=0,mojinagasa,tangosuu;
+var shuruisuu=new Set();
 const tweetDivided = document.getElementById('tweet');
 const mojiDivided = document.getElementById('moji');
 const submitDivided = document.getElementById('Make');
@@ -29,7 +30,7 @@ function makebutton(ID,VALUE){
 
 function pushed(moji){
   console.log("pushed "+moji);
-  if(ansimg.length)document.getElementById("ansimg").innerHTML=ansimg=ansstr="";
+  if(ansimg.length)document.getElementById("ansimg").innerHTML=document.getElementById("point").innerText=ansimg=ansstr="";
   ansstr+=moji;
   document.getElementById("ansstring").innerText=ansstr;
   console.log(ansstr);
@@ -59,7 +60,7 @@ function pushed(moji){
 
 document.getElementById("reset").onclick=function(){
   document.getElementById("ansstring").innerText="ボタンを押してね";
-  document.getElementById("ansimg").innerHTML=ansstr=ansimg="";
+  document.getElementById("ansimg").innerHTML=document.getElementById("point").innerText=ansstr=ansimg="";
 }
 
 function change(num,from,to,img){
@@ -68,6 +69,8 @@ function change(num,from,to,img){
   idx+=num;
   ansimg+=img+' ';
   meisi=true;
+  tangosuu++;
+  shuruisuu.add(to);
   return true;
 }
 
@@ -180,9 +183,12 @@ document.getElementById("make").onclick=function(){
   console.log("play回数:"+cntplay);
   rndm=getRandomInt(2)
   for(var i=ansstr.length-1-rndm;i>=0;i--)ansstr+=ansstr[i];
+  mojinagasa=ansstr.length;
   ansstr+='#####################################';
   tmp="";
   idx=0;
+  tangosuu=0;
+  shuruisuu.clear();
   while(ansstr[idx]!='#'){
     if(meisi&&ansstr[idx]=='と'&&ansstr[idx+1]!='#'){
       tmp+='と';
@@ -221,7 +227,9 @@ document.getElementById("make").onclick=function(){
     console.log('error');
     break;
   }
+  let point=Math.round(10000*(mojinagasa%100)/Math.log(mojinagasa*tangosuu+1-shuruisuu.size));
   document.getElementById("ansstring").innerText=tmp;
+  document.getElementById("point").innerText=point+'points!';
   document.getElementById("ansimg").innerHTML=ansimg;
 
   ansimg+="あ";
@@ -236,7 +244,7 @@ document.getElementById("make").onclick=function(){
     + '&ref_src=twsrc%5Etfw';
   anchor.setAttribute('href', hrefValue);
   anchor.className = 'twitter-hashtag-button';
-  anchor.setAttribute('data-text', tmp+' https://dr0gsk0l.github.io/kaibungenerator/tmp.html');
+  anchor.setAttribute('data-text', tmp+' '+point+'points! https://dr0gsk0l.github.io/kaibungenerator/tmp.html');
   anchor.innerText = 'Tweet #クソ回文ジェネレーター';
   tweetDivided.appendChild(anchor);
 
