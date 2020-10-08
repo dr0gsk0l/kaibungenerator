@@ -100,9 +100,13 @@ document.getElementById("make").onclick=function(){
     return;
   }
   if(ansimg.length)return;
-  if(++cntplay>5){
+  if(++cntplay>3){
     document.getElementById("Link").innerText='回文部の作品を見る';
     document.getElementById("Link").href='https://twitter.com/Ky_oto_yK';
+  }
+  if(cntplay>5){
+    document.getElementById("Link2").innerText='より独創的な回文を作りたい人へ';
+    document.getElementById("Link2").href='https://drogskol.hatenablog.com/entry/2019/10/21/202240';
   }
   console.log("play回数:"+cntplay);
   rndm=getRandomInt(2)
