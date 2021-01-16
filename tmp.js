@@ -128,7 +128,7 @@ document.getElementById("make").onclick=function(){
     if(meisi&&ansstr[idx]=='と'&&ansstr[idx+1]=='か'&&ansstr[idx+2]!='#'){
       tmp+='とか';
       meisi=false;
-      idx++;continue;
+      idx+=2;continue;
     }
     if(meisi&&ansstr[idx]=='と'&&ansstr[idx+1]!='#'){
       tmp+='と';
