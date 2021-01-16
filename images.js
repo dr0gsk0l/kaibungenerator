@@ -27,6 +27,15 @@ var MASHINE='<img src="https://1.bp.blogspot.com/-A4669A-c7Iw/Vq89EUvfqdI/AAAAAA
 var BUNSHI='<img src="https://3.bp.blogspot.com/-Ac8SaHcmlMA/WIW-Ok_GUjI/AAAAAAABBS0/BoAOJqIHeco19fiET1tN2tF3NJ_tv_Z7wCLcB/s400/kagaku_bunshi.png" alt="分子" width="100px" height="100px">';
 var HITONANA='<img src="https://1.bp.blogspot.com/-9pDsJGXvNk4/XWS5fc5quiI/AAAAAAABUS8/xACX0wOId9U_NxqL80sNEcL96Bx_Qs4tQCLcBGAs/s1600/group_family_asia.png" alt="七人" width="123px" height="100px">';
 var SHIMA='<img src="https://1.bp.blogspot.com/-4Ng1gNmOhAM/V2ucIdYoIAI/AAAAAAAA7vs/trvOgTP7V30aBo8mAV-d5xlcTyaQHCq3gCLcB/s800/mujintou_kojima.png" alt="島" width="135px" height="100px">';
+var KA='<img src="https://4.bp.blogspot.com/-7N6zGrdV09E/WBLNCp0SXBI/AAAAAAAA_Mg/_zgTCeSHvpQdphodHKiymXgzkW-6tdYzACLcB/s800/bug_ka.png" alt="蚊" width="100px" height="100px">';
+var SHIKA1='<img src="https://1.bp.blogspot.com/-bu6i-g8TaeI/UX-OTyfTR3I/AAAAAAAAQ2o/NPdroBrw-ac/s1600/animal_deer.png" alt="鹿" width="76px" height="100px">';
+var SHIKA2='<img src="https://4.bp.blogspot.com/-QhV91eEE8ms/UZ2U537QLOI/AAAAAAAATpk/n5gGu_PitTY/s800/haisya.png" alt="歯科" width="64px" height="100px">';
+var KAMA1='<img src="https://3.bp.blogspot.com/-Ec7JsW5NYBg/VOsJXK4U7RI/AAAAAAAArmo/nIFlmTcoaUA/s800/kama.png" alt="鎌" width="100px" height="100px">';
+var KAMA2='<img src="https://3.bp.blogspot.com/-C6DZSoNmdas/WvQH4ZxYUlI/AAAAAAABL-Y/0gluL04Pn-UgONpZ-DJYynqA6-GNPzb_gCLcBGAs/s800/syokki_kamameshi_close.png" alt="釜" width="100px" height="100px">';
+var KAME1='<img src="https://4.bp.blogspot.com/-Noj-Uad0wo4/V5NEVnfiP_I/AAAAAAAA8iY/RxBWA_TTLP4KvWDppYucUb5Et55qgp5YQCLcB/s800/animal_umigame_osagame.png" alt="亀" width="123px" height="100px">';
+var KAME2='<img src="https://2.bp.blogspot.com/-HcZzWmNl0VY/V5NEVoNt9QI/AAAAAAAA8ic/KPAKh_jhcZsFetZFttp-XCe4oSHfqwDrACLcB/s800/animal_umigame_aka.png" alt="亀" width="114px" height="100px">';
+var KAME3='<img src="https://4.bp.blogspot.com/-YXZgbQRViEM/V5NSA2-1k3I/AAAAAAAA8lc/OqYNLGApMqccbG_OjFuoUtMArqcfUrvjgCLcB/s800/animal_umigame_ao.png" alt="亀" width="120px" height="100px">';
+var KAME4='<img src="https://3.bp.blogspot.com/-rS1w3AlRQ9w/V5NEX0ps7gI/AAAAAAAA8is/QYYrat7X_GUkdWwlUkvin8P_ZWtOjBVlgCLcB/s800/animal_umigame_taimai.png" alt="亀" width="124px" height="100px">';
 var MAJU=[
   '<img src="https://1.bp.blogspot.com/-Zg3Rhwl3Np4/VuKENvWUmLI/AAAAAAAA4x8/ltMQ0pH0zR071jtfl8sG7mS3SQTJdh0iQ/s800/uma_chupacabra_new.png"  width=auto height="300px">',
   '<img src="https://3.bp.blogspot.com/-GRGQEnE3UqA/UT10SkjkLMI/AAAAAAAAOvE/3vk4npeqTFg/s400/youkai_kirin.png"  width=auto height="300px">',
