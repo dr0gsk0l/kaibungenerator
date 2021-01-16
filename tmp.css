@@ -58,6 +58,14 @@ body{
   color: pink;
 }
 
+#ka{
+  -webkit-appearance:none;
+  width: 300px;
+  height: 100px;
+  font-size:xx-large;
+  color: brown;
+}
+
 #shinbunshi{
   -webkit-appearance:none;
   width: 300px;
