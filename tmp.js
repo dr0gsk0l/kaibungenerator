@@ -20,6 +20,11 @@ makebutton("ma","ま");
 document.getElementById("to").onclick=function(){pushed('と')};
 document.getElementById("ma").onclick=function(){pushed('ま')};
 
+document.getElementById("Link").onclick()=function(){
+  if(mojiDivided.childElementCount==5)makebutton("ka","か");
+}
+document.getElementById("ka").onclick=function(){pushed('か')};
+
 function makebutton(ID,VALUE){
   var anchor=document.createElement('input');
   anchor.setAttribute("type","button");
@@ -119,6 +124,11 @@ document.getElementById("make").onclick=function(){
   tangosuu=0;
   shuruisuu.clear();
   while(ansstr[idx]!='#'){
+    if(meisi&&ansstr[idx]=='と'&&ansstr[idx+1]=='か'&&ansstr[idx+2]!='#'){
+      tmp+='とか';
+      meisi=false;
+      idx++;continue;
+    }
     if(meisi&&ansstr[idx]=='と'&&ansstr[idx+1]!='#'){
       tmp+='と';
       meisi=false;
@@ -128,6 +138,16 @@ document.getElementById("make").onclick=function(){
     if(change(6,'ましんぶんし','マシン、分子',MASHINE+' '+BUNSHI))continue;
     if(change(6,'しんぶんしま','新聞、島',SHINBUNSHI+' '+SHIMA))continue;
     if(change(20,'ひととひととひととひととひととひととひと','人と人と人と人と人と人と人',HITONANA))continue;
+    
+    if(idx%2==0)if(change(2,'かま','鎌',KAMA1))continue;
+    if(idx%2==1)if(change(2,'かま','釜',KAMA２))continue;
+    if(idx%4==0)if(change(2,'かめ','亀',KAME1))continue;
+    if(idx%4==1)if(change(2,'かめ','亀',KAME2))continue;
+    if(idx%4==2)if(change(2,'かめ','亀',KAME3))continue;
+    if(idx%4==3)if(change(2,'かめ','亀',KAME4))continue;
+    if(idx%2==0)if(change(6,'しんぶんしか','新聞、鹿',SHINBUNSHI+' '+SHIKA1))continue;
+    if(idx%2==1)if(change(6,'しんぶんしか','新聞、歯科',SHINBUNSHI+' '+SHIKA２))continue;
+    
     if(idx%30==15){if(change(3,'とまと','トマト',TOMATO2))continue;}
     else if(change(3,'とまと','トマト',TOMATO))continue;
     if(change(5,'ままとひと','ママと人',MAMATOHITO))continue;
@@ -153,6 +173,7 @@ document.getElementById("make").onclick=function(){
     if(change(1,'ま','魔',MA))continue;
     if(change(1,'ひ','火',HI))continue;
     if(change(1,'め','目',ME))continue;
+    if(change(1,'か','蚊',KA))continue;
     if(change(5,'しんぶんし','新聞紙',SHINBUNSHI))continue;
     console.log('error');
     break;
