@@ -147,7 +147,7 @@ document.getElementById("make").onclick=function(){
     if(idx%4==2)if(change(2,'かめ','亀',KAME3))continue;
     if(idx%4==3)if(change(2,'かめ','亀',KAME4))continue;
     if(idx%2==0)if(change(6,'しんぶんしか','新聞、鹿',SHINBUNSHI+' '+SHIKA1))continue;
-    if(idx%2==1)if(change(6,'しんぶんしか','新聞、歯科',SHINBUNSHI+' '+SHIKA２))continue;
+    if(idx%2==1)if(change(6,'しんぶんしか','新聞、歯科',SHINBUNSHI+' '+SHIKA2))continue;
     
     if(idx%30==15){if(change(3,'とまと','トマト',TOMATO2))continue;}
     else if(change(3,'とまと','トマト',TOMATO))continue;
