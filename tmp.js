@@ -126,6 +126,7 @@ document.getElementById("make").onclick=function(){
     }
     if(meisi)tmp+='、';
     if(change(6,'ましんぶんし','マシン、分子',MASHINE+' '+BUNSHI))continue;
+    if(change(6,'しんぶんしま','新聞、島',SHINBUNSHI+' '+SHIMA))continue;
     if(change(20,'ひととひととひととひととひととひととひと','人と人と人と人と人と人と人',HITONANA))continue;
     if(idx%30==15){if(change(3,'とまと','トマト',TOMATO2))continue;}
     else if(change(3,'とまと','トマト',TOMATO))continue;
