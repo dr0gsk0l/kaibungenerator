@@ -141,7 +141,7 @@ document.getElementById("make").onclick=function(){
     if(change(20,'ひととひととひととひととひととひととひと','人と人と人と人と人と人と人',HITONANA))continue;
     
     if(idx%2==0)if(change(2,'かま','鎌',KAMA1))continue;
-    if(idx%2==1)if(change(2,'かま','釜',KAMA２))continue;
+    if(idx%2==1)if(change(2,'かま','釜',KAMA2))continue;
     if(idx%4==0)if(change(2,'かめ','亀',KAME1))continue;
     if(idx%4==1)if(change(2,'かめ','亀',KAME2))continue;
     if(idx%4==2)if(change(2,'かめ','亀',KAME3))continue;
