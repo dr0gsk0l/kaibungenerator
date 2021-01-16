@@ -26,6 +26,7 @@ var MAMATOHITO='<img src="https://2.bp.blogspot.com/-c27iEQIizZo/V2ucndSaVhI/AAA
 var MASHINE='<img src="https://1.bp.blogspot.com/-A4669A-c7Iw/Vq89EUvfqdI/AAAAAAAA3lY/N7Uzmc-426k/s400/machine_yubisashi_kosyou.png" alt="マシン" width="100px" height="100px">';
 var BUNSHI='<img src="https://3.bp.blogspot.com/-Ac8SaHcmlMA/WIW-Ok_GUjI/AAAAAAABBS0/BoAOJqIHeco19fiET1tN2tF3NJ_tv_Z7wCLcB/s400/kagaku_bunshi.png" alt="分子" width="100px" height="100px">';
 var HITONANA='<img src="https://1.bp.blogspot.com/-9pDsJGXvNk4/XWS5fc5quiI/AAAAAAABUS8/xACX0wOId9U_NxqL80sNEcL96Bx_Qs4tQCLcBGAs/s1600/group_family_asia.png" alt="七人" width="123px" height="100px">';
+var SHIMA='<img src="https://1.bp.blogspot.com/-4Ng1gNmOhAM/V2ucIdYoIAI/AAAAAAAA7vs/trvOgTP7V30aBo8mAV-d5xlcTyaQHCq3gCLcB/s800/mujintou_kojima.png" alt="島" width="135px" height="100px">';
 var MAJU=[
   '<img src="https://1.bp.blogspot.com/-Zg3Rhwl3Np4/VuKENvWUmLI/AAAAAAAA4x8/ltMQ0pH0zR071jtfl8sG7mS3SQTJdh0iQ/s800/uma_chupacabra_new.png"  width=auto height="300px">',
   '<img src="https://3.bp.blogspot.com/-GRGQEnE3UqA/UT10SkjkLMI/AAAAAAAAOvE/3vk4npeqTFg/s400/youkai_kirin.png"  width=auto height="300px">',
