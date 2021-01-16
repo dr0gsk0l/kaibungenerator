@@ -140,6 +140,7 @@ document.getElementById("make").onclick=function(){
     if(change(6,'しんぶんしま','新聞、島',SHINBUNSHI+' '+SHIMA))continue;
     if(change(20,'ひととひととひととひととひととひととひと','人と人と人と人と人と人と人',HITONANA))continue;
     
+    if(change(2,'めか','メカ',MASHINE))continue;
     if(idx%2==0)if(change(2,'かま','鎌',KAMA1))continue;
     if(idx%2==1)if(change(2,'かま','釜',KAMA2))continue;
     if(idx%4==0)if(change(2,'かめ','亀',KAME1))continue;
