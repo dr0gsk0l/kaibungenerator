@@ -44,7 +44,11 @@ function pushed(moji){
     makebutton("me","め");
     document.getElementById("me").onclick=function(){pushed('め')};
   }
-  if(ansstr.length>50&&mojiDivided.childElementCount==4){
+  if(ansstr.length>30&&mojiDivided.childElementCount==4){
+    makebutton("ka","か");
+    document.getElementById("ka").onclick=function(){pushed('か')};
+  }
+  if(ansstr.length>100&&mojiDivided.childElementCount==5){
     makebutton("shinbunshi","しんぶんし");
     document.getElementById("shinbunshi").onclick=function(){pushed('しんぶんし')};
   }
@@ -105,10 +109,6 @@ document.getElementById("make").onclick=function(){
   if(++cntplay==3){
     document.getElementById("Link").innerText='回文部の作品を見る';
     document.getElementById("Link").href='https://twitter.com/Ky_oto_yK';
-    document.getElementById("Link").onclick()=function(){
-      if(mojiDivided.childElementCount==5)makebutton("ka","か");
-      document.getElementById("ka").onclick=function(){pushed('か')};
-    }
   }
   if(cntplay==5){
     document.getElementById("Link2").innerText='より独創的な回文を作りたい人へ';
