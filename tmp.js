@@ -117,18 +117,17 @@ document.getElementById("make").onclick=function(){
   console.log("play回数:"+cntplay);
   rndm=getRandomInt(100);
   idx=0;
-  if(rndm==29){
-    ansstr="##";
-    change(1,'#','ゆすいだらパチンカス完治パラダイス湯',SECRET);
-  }
-  rndm=rndm%2;
   if(ansstr[ansstr.length-1]=='し')rndm=0;
-  for(var i=ansstr.length-1-rndm;i>=0;i--)ansstr+=ansstr[i];
+  for(var i=ansstr.length-1-(rndm%2);i>=0;i--)ansstr+=ansstr[i];
   mojinagasa=ansstr.length;
   ansstr+='#####################################';
   tmp="";
   tangosuu=0;
   shuruisuu.clear();
+  if(rndm==29){
+    ansstr="##";
+    change(1,'#','ゆすいだらパチンカス完治パラダイス湯',SECRET);
+  }
   while(ansstr[idx]!='#'){
     if(meisi&&ansstr[idx]=='と'&&ansstr[idx+1]=='か'&&ansstr[idx+2]!='#'){
       tmp+='とか';
