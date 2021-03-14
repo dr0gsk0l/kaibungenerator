@@ -5,8 +5,8 @@ body{
 #make{
   -webkit-appearance:none;
   background-color: blue;
-  width: 150px;
-  height: 80px;
+  width: 80vw;
+  height: 80vh;
   font-size: x-large;
   font-style: oblique;
   color: aliceblue;
@@ -15,8 +15,8 @@ body{
 #DP{
   -webkit-appearance:none;
   background-color: blue;
-  width: 150px;
-  height: 80px;
+  width: 100vw;
+  height: 100vh;
   font-size: x-large;
   font-style: oblique;
   color: aliceblue;
@@ -28,55 +28,55 @@ body{
 
 #to{
   -webkit-appearance:none;
-  width: 300px;
-  height: 100px;
+  width: 100vw;
+  height: 100vh;
   font-size:xx-large;
   color: red;
 }
 
 #ma{
   -webkit-appearance:none;
-  width: 300px;
-  height: 100px;
+  width: 100vw;
+  height: 100vh;
   font-size:xx-large;
   color: green;
 }
 
 #hi{
   -webkit-appearance:none;
-  width: 300px;
-  height: 100px;
+  width: 100vw;
+  height: 100vh;
   font-size:xx-large;
   color: blue;
 }
 
 #me{
   -webkit-appearance:none;
-  width: 300px;
-  height: 100px;
+  width: 100vw;
+  height: 100vh;
   font-size:xx-large;
   color: pink;
 }
 
 #ka{
   -webkit-appearance:none;
-  width: 300px;
-  height: 100px;
+  width: 100vw;
+  height: 100vh;
   font-size:xx-large;
   color: brown;
 }
 
 #shinbunshi{
   -webkit-appearance:none;
-  width: 300px;
-  height: 100px;
+  width: 100vw;
+  height: 100vh;
   font-size:xx-large;
   color: white;
 }
 
 #reset{
   -webkit-appearance:none;
-  width: 100px;
-  height: 50px;
+  width: 70vw;
+  height: 70vh;
   font-size:large;
 }
