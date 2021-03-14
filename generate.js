@@ -1,4 +1,4 @@
-/*var ansstr="";
+var ansstr="";
 var ansimg="";
 var meisi=false;
 const tweetDivided = document.getElementById('tweet');
@@ -124,4 +124,3 @@ document.getElementById("make").onclick=function(){
   ansimg+="あ";
   meisi=false;
 }
-*/
