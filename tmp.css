@@ -5,7 +5,7 @@ body{
 #make{
   -webkit-appearance:none;
   background-color: blue;
-  width: 8vw;
+  width: 40vw;
   height: 8vh;
   font-size: x-large;
   font-style: oblique;
@@ -15,7 +15,7 @@ body{
 #DP{
   -webkit-appearance:none;
   background-color: blue;
-  width: 10vw;
+  width: 25vw;
   height: 10vh;
   font-size: x-large;
   font-style: oblique;
@@ -28,7 +28,7 @@ body{
 
 #to{
   -webkit-appearance:none;
-  width: 10vw;
+  width: 20vw;
   height: 10vh;
   font-size:xx-large;
   color: red;
@@ -36,7 +36,7 @@ body{
 
 #ma{
   -webkit-appearance:none;
-  width: 10vw;
+  width: 20vw;
   height: 10vh;
   font-size:xx-large;
   color: green;
@@ -44,7 +44,7 @@ body{
 
 #hi{
   -webkit-appearance:none;
-  width: 10vw;
+  width: 20vw;
   height: 10vh;
   font-size:xx-large;
   color: blue;
@@ -52,7 +52,7 @@ body{
 
 #me{
   -webkit-appearance:none;
-  width: 10vw;
+  width: 20vw;
   height: 10vh;
   font-size:xx-large;
   color: pink;
@@ -60,7 +60,7 @@ body{
 
 #ka{
   -webkit-appearance:none;
-  width: 10vw;
+  width: 20vw;
   height: 10vh;
   font-size:xx-large;
   color: brown;
@@ -68,7 +68,7 @@ body{
 
 #shinbunshi{
   -webkit-appearance:none;
-  width: 10vw;
+  width: 20vw;
   height: 10vh;
   font-size:xx-large;
   color: white;
@@ -76,7 +76,7 @@ body{
 
 #reset{
   -webkit-appearance:none;
-  width: 7vw;
+  width: 30vw;
   height: 7vh;
   font-size:large;
 }
