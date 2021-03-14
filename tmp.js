@@ -125,7 +125,7 @@ document.getElementById("make").onclick=function(){
   tangosuu=0;
   shuruisuu.clear();
   if(rndm==29){
-    ansstr="##";
+    ansstr="#?#";
     change(1,'#','ゆすいだらパチンカス完治パラダイス湯',SECRET);
   }
   while(ansstr[idx]!='#'){
@@ -185,6 +185,7 @@ document.getElementById("make").onclick=function(){
     break;
   }
   let point=Math.round(10000*(mojinagasa%100)/(1+Math.abs(Math.log(mojinagasa*tangosuu+1-shuruisuu.size))));
+  if(ansstr[1]=='?')point=1000000000000000;
   document.getElementById("ansstring").innerText=tmp;
   document.getElementById("point").innerText=point+'points!';
   document.getElementById("ansimg").innerHTML=ansimg;
