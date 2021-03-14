@@ -36,6 +36,7 @@ var KAME1='<img src="https://4.bp.blogspot.com/-Noj-Uad0wo4/V5NEVnfiP_I/AAAAAAAA
 var KAME2='<img src="https://2.bp.blogspot.com/-HcZzWmNl0VY/V5NEVoNt9QI/AAAAAAAA8ic/KPAKh_jhcZsFetZFttp-XCe4oSHfqwDrACLcB/s800/animal_umigame_aka.png" alt="亀" width="114px" height="100px">';
 var KAME3='<img src="https://4.bp.blogspot.com/-YXZgbQRViEM/V5NSA2-1k3I/AAAAAAAA8lc/OqYNLGApMqccbG_OjFuoUtMArqcfUrvjgCLcB/s800/animal_umigame_ao.png" alt="亀" width="120px" height="100px">';
 var KAME4='<img src="https://3.bp.blogspot.com/-rS1w3AlRQ9w/V5NEX0ps7gI/AAAAAAAA8is/QYYrat7X_GUkdWwlUkvin8P_ZWtOjBVlgCLcB/s800/animal_umigame_taimai.png" alt="亀" width="124px" height="100px">';
+var SECRET='<img src="https://pbs.twimg.com/media/Ef3GTYXU4AAQFno?format=png&name=small" alt="secret" width="100px" height="100px">';
 var MAJU=[
   '<img src="https://1.bp.blogspot.com/-Zg3Rhwl3Np4/VuKENvWUmLI/AAAAAAAA4x8/ltMQ0pH0zR071jtfl8sG7mS3SQTJdh0iQ/s800/uma_chupacabra_new.png"  width=auto height="300px">',
   '<img src="https://3.bp.blogspot.com/-GRGQEnE3UqA/UT10SkjkLMI/AAAAAAAAOvE/3vk4npeqTFg/s400/youkai_kirin.png"  width=auto height="300px">',
