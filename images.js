@@ -1,4 +1,4 @@
-var TOMATO='<img src="https://4.bp.blogspot.com/-FlkEDz3wQSc/Vtw1wrbo6AI/AAAAAAAA4fk/k8tfPNkMvb4/s800/tomato_red.png" alt="トマト" height="14%">';
+var TOMATO='<img src="https://4.bp.blogspot.com/-FlkEDz3wQSc/Vtw1wrbo6AI/AAAAAAAA4fk/k8tfPNkMvb4/s800/tomato_red.png" alt="トマト"  width=auto height="14%">';
 var TOMATO2='<img src="https://2.bp.blogspot.com/-i3xPt3TISb0/UWgWlyylbUI/AAAAAAAAQGo/JUtkdKSkloc/s1600/vegetable_tomato.png" alt="トマト2" height="14%">';
 var MAMA='<img src="https://3.bp.blogspot.com/-Tsx2ag1qcVk/UNO5bQwAElI/AAAAAAAAIx8/jwOIg9WO8L8/s1600/apron_mama.png" alt="ママ" width=auto height="14%">';
 var MAMA2='<img src="https://3.bp.blogspot.com/-x2DitymfGAo/UnyHS2DYEZI/AAAAAAAAahQ/HDhiTG4b4n8/s800/cooking_mama.png" alt="ママ2" height="14%">';
