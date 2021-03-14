@@ -115,13 +115,19 @@ document.getElementById("make").onclick=function(){
     document.getElementById("Link2").href='https://drogskol.hatenablog.com/entry/2019/10/21/202240';
   }
   console.log("play回数:"+cntplay);
-  rndm=getRandomInt(2)
+  rndm=getRandomInt(100);
+  idx=0;
+  if(rndm==0){
+    ansstr="##";
+    change(1,'#','ゆすいだらパチンカス完治パラダイス湯',SECRET);
+    return;
+  }
+  rndm=rndm%2;
   if(ansstr[ansstr.length-1]=='し')rndm=0;
   for(var i=ansstr.length-1-rndm;i>=0;i--)ansstr+=ansstr[i];
   mojinagasa=ansstr.length;
   ansstr+='#####################################';
   tmp="";
-  idx=0;
   tangosuu=0;
   shuruisuu.clear();
   while(ansstr[idx]!='#'){
