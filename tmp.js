@@ -117,10 +117,9 @@ document.getElementById("make").onclick=function(){
   console.log("play回数:"+cntplay);
   rndm=getRandomInt(100);
   idx=0;
-  if(rndm==0){
+  if(rndm==29){
     ansstr="##";
     change(1,'#','ゆすいだらパチンカス完治パラダイス湯',SECRET);
-    return;
   }
   rndm=rndm%2;
   if(ansstr[ansstr.length-1]=='し')rndm=0;
