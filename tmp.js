@@ -58,7 +58,7 @@ function pushed(moji){
     document.title="魔獣ジェネレーター";
     $('#ansstring').css('color','White');
     $('#letsmake').css('color','White');
-    $('#body').css('background-image','url(https://4.bp.blogspot.com/-He_mXZIlM2k/V8jqWIVG1jI/AAAAAAAA9dQ/jp7ui0iGU4QEWCKzaWKUaZiR5QqHoLqYQCLcB/s2000/bg_hell_jigoku.jpg)');
+    $('body').css('background-image','url(https://4.bp.blogspot.com/-He_mXZIlM2k/V8jqWIVG1jI/AAAAAAAA9dQ/jp7ui0iGU4QEWCKzaWKUaZiR5QqHoLqYQCLcB/s2000/bg_hell_jigoku.jpg)');
   }
   else{
     document.getElementById("make").value=document.h1="回文作成";
@@ -66,7 +66,7 @@ function pushed(moji){
     document.title="回文ジェネレーター";
     $('#ansstring').css('color',"Black");
     $('#letsmake').css('color','Black');
-    $('#body').css('background-image', 'none');
+    $('body').css('background-image', 'none');
   }
 }
 
