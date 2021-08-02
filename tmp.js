@@ -56,11 +56,17 @@ function pushed(moji){
     document.getElementById("make").value="魔獣作成";
     document.getElementById("letsmake").innerText="君だけの魔獣を作ろう!";
     document.title="魔獣ジェネレーター";
+    $('#ansstring').css('color','White');
+    $('#letsmake').css('color','White');
+    $('#body').css('background-image','url(https://4.bp.blogspot.com/-He_mXZIlM2k/V8jqWIVG1jI/AAAAAAAA9dQ/jp7ui0iGU4QEWCKzaWKUaZiR5QqHoLqYQCLcB/s2000/bg_hell_jigoku.jpg)');
   }
   else{
     document.getElementById("make").value=document.h1="回文作成";
     document.getElementById("letsmake").innerText="君だけの回文を作ろう!";
     document.title="回文ジェネレーター";
+    $('#ansstring').css('color',"Black");
+    $('#letsmake').css('color','Black');
+    $('#body').css('background-image', 'none');
   }
 }
 
@@ -143,7 +149,7 @@ document.getElementById("make").onclick=function(){
     if(change(6,'ましんぶんし','マシン、分子',MASHINE+' '+BUNSHI))continue;
     if(change(6,'しんぶんしま','新聞、島',SHINBUNSHI+' '+SHIMA))continue;
     if(change(20,'ひととひととひととひととひととひととひと','人と人と人と人と人と人と人',HITONANA))continue;
-    
+
     if(change(2,'めか','メカ',MASHINE))continue;
     if(idx%2==0)if(change(2,'かま','鎌',KAMA1))continue;
     if(idx%2==1)if(change(2,'かま','釜',KAMA2))continue;
@@ -153,7 +159,7 @@ document.getElementById("make").onclick=function(){
     if(idx%4==3)if(change(2,'かめ','亀',KAME4))continue;
     if(idx%2==0)if(change(6,'しんぶんしか','新聞、鹿',SHINBUNSHI+' '+SHIKA1))continue;
     if(idx%2==1)if(change(6,'しんぶんしか','新聞、歯科',SHINBUNSHI+' '+SHIKA2))continue;
-    
+
     if(idx%30==15){if(change(3,'とまと','トマト',TOMATO2))continue;}
     else if(change(3,'とまと','トマト',TOMATO))continue;
     if(change(5,'ままとひと','ママと人',MAMATOHITO))continue;
