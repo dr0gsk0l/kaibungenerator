@@ -20,8 +20,6 @@ makebutton("ma","ま");
 document.getElementById("to").onclick=function(){pushed('と')};
 document.getElementById("ma").onclick=function(){pushed('ま')};
 
-
-
 function makebutton(ID,VALUE){
   var anchor=document.createElement('input');
   anchor.setAttribute("type","button");
@@ -76,7 +74,7 @@ document.getElementById("reset").onclick=function(){
 }
 
 function change(num,from,to,img){
-  if(ansstr.substr(idx,num)!=from)return false;
+  if(ansstr.substring(idx,idx+num)!=from)return false;
   tmp+=to;
   idx+=num;
   ansimg+=img+' ';
@@ -215,4 +213,37 @@ document.getElementById("make").onclick=function(){
   const script = document.createElement('script');
   script.setAttribute('src', 'https://platform.twitter.com/widgets.js');
   tweetDivided.appendChild(script);
+}
+
+function sleep(ms){
+  return new Promise((resolve,reject)=>{
+      //here our function should be implemented 
+      setTimeout(()=>{
+          resolve();
+      ;} ,ms
+      );
+  });
+}
+
+document.getElementById("anime").onclick=async function(){
+  if(document.getElementById("ansimg").innerHTML=="")return;
+  console.log(document.getElementById("ansimg").innerHTML);
+  var u = new SpeechSynthesisUtterance();
+  u.text = document.getElementById("ansstring").innerText;
+  u.lang = 'ja-JP';
+  u.rate = 1.0;
+  speechSynthesis.speak(u);
+  for(var i=0;ansimg[i]!='あ';i++){
+    var end=0;
+    while(ansimg[i+end]!='>')end++;
+    end++;
+    console.log(ansimg.substring(i,i+end));
+    document.getElementById("ansimg").innerHTML=ansimg.substring(i,i+end);
+
+    await sleep(500);
+
+    i+=end;
+
+  }
+  document.getElementById("ansimg").innerHTML=ansimg.substring(0,i);
 }
