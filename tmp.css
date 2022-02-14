@@ -80,3 +80,10 @@ body{
   height: 7vh;
   font-size:large;
 }
+
+#anime{
+  -webkit-appearance:none;
+  width: 30vw;
+  height: 7vh;
+  font-size:large;
+}
