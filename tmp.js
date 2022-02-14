@@ -1,5 +1,9 @@
 var ansstr="",ansimg="",meisi=false,idx,tmp="",cntplay=0,rndm=0,mojinagasa,tangosuu;
 var shuruisuu=new Set();
+var tango=[];
+var yomiage = new SpeechSynthesisUtterance();
+yomiage.lang = 'ja-JP';
+yomiage.rate = 1.0;
 const tweetDivided = document.getElementById('tweet');
 const mojiDivided = document.getElementById('moji');
 const submitDivided = document.getElementById('Make');
@@ -30,7 +34,10 @@ function makebutton(ID,VALUE){
 
 function pushed(moji){
   console.log("pushed "+moji);
-  if(ansimg.length)document.getElementById("ansimg").innerHTML=document.getElementById("point").innerText=ansimg=ansstr="";
+  if(ansimg.length){
+    document.getElementById("ansimg").innerHTML=document.getElementById("point").innerText=ansimg=ansstr="";
+    tango=[];
+  }
   ansstr+=moji;
   document.getElementById("ansstring").innerText=ansstr;
   console.log(ansstr);
@@ -71,6 +78,7 @@ function pushed(moji){
 document.getElementById("reset").onclick=function(){
   document.getElementById("ansstring").innerText="ボタンを押してね";
   document.getElementById("ansimg").innerHTML=document.getElementById("point").innerText=ansstr=ansimg="";
+  tango=[];
 }
 
 function change(num,from,to,img){
@@ -82,6 +90,7 @@ function change(num,from,to,img){
   tangosuu++;
   if(from=='ましんぶんし')tangosuu++;
   shuruisuu.add(to);
+  tango.push(from);
   return true;
 }
 
@@ -136,11 +145,13 @@ document.getElementById("make").onclick=function(){
     if(meisi&&ansstr[idx]=='と'&&ansstr[idx+1]=='か'&&ansstr[idx+2]!='#'){
       tmp+='とか';
       meisi=false;
+      tango[tango.length-1]+='とか';
       idx+=2;continue;
     }
     if(meisi&&ansstr[idx]=='と'&&ansstr[idx+1]!='#'){
       tmp+='と';
       meisi=false;
+      tango[tango.length-1]+='と';
       idx++;continue;
     }
     if(meisi)tmp+='、';
@@ -215,9 +226,12 @@ document.getElementById("make").onclick=function(){
   tweetDivided.appendChild(script);
 }
 
-function sleep(ms){
-  return new Promise((resolve,reject)=>{
-      //here our function should be implemented 
+function yomi(ms,now){
+  yomiage.text=tango[now];
+  console.log(yomiage.text);
+  speechSynthesis.speak(yomiage);
+
+  return new Promise((resolve,reject)=>{ 
       setTimeout(()=>{
           resolve();
       ;} ,ms
@@ -228,19 +242,17 @@ function sleep(ms){
 document.getElementById("anime").onclick=async function(){
   if(document.getElementById("ansimg").innerHTML=="")return;
   console.log(document.getElementById("ansimg").innerHTML);
-  var u = new SpeechSynthesisUtterance();
-  u.text = document.getElementById("ansstring").innerText;
-  u.lang = 'ja-JP';
-  u.rate = 1.0;
-  speechSynthesis.speak(u);
+  var now=0;
+  
+  console.log(tango);
   for(var i=0;ansimg[i]!='あ';i++){
     var end=0;
     while(ansimg[i+end]!='>')end++;
     end++;
     console.log(ansimg.substring(i,i+end));
     document.getElementById("ansimg").innerHTML=ansimg.substring(i,i+end);
-
-    await sleep(500);
+    
+    await yomi(1000,now++);
 
     i+=end;
 
